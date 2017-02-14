@@ -1,0 +1,74 @@
+// 
+// Visibility Classes
+// 
+
+@import "variables";
+
+
+@media (max-width: $small){
+	.show-for-large-up{
+		display: none !important;
+	}
+	.show-for-medium-up{
+		display: none !important;
+	}
+	.hide-for-small{
+		display: none !important;
+	}
+
+
+}
+
+
+
+@media (min-width: $small) and (max-width: $medium){
+	.show-for-large-up{
+		display: none !important;
+	}
+	.show-for-medium-up{
+		display: none !important;
+	}
+	.show-for-small-only{
+		display: none !important;
+	}
+
+
+
+}
+
+
+
+
+@media (min-width: $medium) and (max-width: $large){
+	.show-for-large-up{
+		display: none !important;
+	}
+	.show-for-small-only{
+		display: none !important;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+@media (min-width: $large){
+	.show-for-small-only{
+		display: none !important;
+	}
+	.hide-for-large-up{
+		display: none !important;		
+	}
+
+
+
+
+}
+
+
+

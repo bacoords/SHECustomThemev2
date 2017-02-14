@@ -1,0 +1,174 @@
+@import "variables";
+@font-face {
+	font-family: 'SHE-Custom-Icons';
+	src:url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.eot?liywug');
+	src:url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.eot?#iefixliywug') format('embedded-opentype'),
+		url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.woff?liywug') format('woff'),
+		url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.ttf?liywug') format('truetype'),
+		url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.svg?liywug#SHE-Custom-Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="she-icons"], [class*=" she-icons"] {
+	font-family: 'SHE-Custom-Icons';
+	speak: none;
+    font-size:6rem;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 6rem;
+    color:$body-font-color;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class^="she-icons"]:hover {
+    color:$she-blue;
+}
+
+[class*=" she-icons"]:hover {
+    color:$she-blue;
+}
+
+
+.she-icons__newsletter:before {
+	content: "\e61f";
+}
+.she-icons__houseleaf:before {
+	content: "\e611";
+}
+.she-icons__vimeo:before {
+	content: "\e61e";
+}
+.she-icons__facebook:before {
+	content: "\e61b";
+}
+.she-icons__linkedin:before {
+	content: "\e61c";
+}
+.she-icons__rss:before {
+	content: "\e61d";
+}
+.she-icons__beaker:before {
+	content: "\e600";
+}
+.she-icons__blank:before {
+	content: "\e601";
+}
+.she-icons__cash:before {
+	content: "\e602";
+}
+.she-icons__certificate:before {
+	content: "\e603";
+}
+.she-icons__checklist:before {
+	content: "\e604";
+}
+.she-icons__classroom:before {
+	content: "\e605";
+}
+.she-icons__construction:before {
+	content: "\e606";
+}
+.she-icons__cross:before {
+	content: "\e607";
+}
+.she-icons__dollarsign:before {
+	content: "\e608";
+}
+.she-icons__forrent:before {
+	content: "\e609";
+}
+.she-icons__group:before {
+	content: "\e60a";
+}
+.she-icons__hammer:before {
+	content: "\e60b";
+}
+.she-icons__handshake:before {
+	content: "\e60c";
+}
+.she-icons__heart:before {
+	content: "\e60d";
+}
+.she-icons__house:before {
+	content: "\e60e";
+}
+.she-icons__housecouple:before {
+	content: "\e60f";
+}
+.she-icons__housekey:before {
+	content: "\e610";
+}
+.she-icons__info:before {
+	content: "\e612";
+}
+.she-icons__manquestion:before {
+	content: "\e613";
+}
+.she-icons__pipes:before {
+	content: "\e614";
+}
+.she-icons__recycle:before {
+	content: "\e615";
+}
+.she-icons__speechbubble:before {
+	content: "\e616";
+}
+.she-icons__warning:before {
+	content: "\e617";
+}
+.she-icons__waterdrop:before {
+	content: "\e618";
+}
+.she-icons__waterglass:before {
+	content: "\e619";
+}
+.she-icons__waterhand:before {
+	content: "\e61a";
+}
+
+
+.jetpack-facebook{
+    display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Genericons';
+	font-size: 1.6rem;
+	vertical-align: top;
+    background: #3b5998;
+    color: #fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 0;
+    box-shadow: none;
+    padding: 8px;
+    position: relative;
+    top: -2px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    &:before{ content: '\f204'; }
+}
+.jetpack-linkedin{
+    display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Genericons';
+	font-size: 1.6rem;
+	vertical-align: top;
+    background: #0077b5;
+    color: #fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 0;
+    box-shadow: none;
+    padding: 8px;
+    position: relative;
+    top: -2px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    &:before{ content: '\f207'; }
+}

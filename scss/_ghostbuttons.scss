@@ -1,0 +1,79 @@
+
+// 
+// Ghost Buttons
+// 
+@import "variables";
+.she-white-ghost-btn {
+      display: inline-block;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      padding:0.5em 1em;
+      font-size: 1em;
+       -webkit-transition: background-color 0.5s, color 0.5s;
+       -moz-transition: background-color 0.5s, color 0.5s;
+       -o-transition: background-color 0.5s, color 0.5s;
+       transition: background-color 0.5s, color 0.5s;
+      p, h1, h2, h3, h4, h5, a{
+          color:#fff;
+      }
+    }
+.she-white-ghost-btn:hover {
+      // background-color:$she-blue;
+       background-color:rgba($she-blue,0.3);
+      //color:$she-blue;
+      //font-weight:lighter;
+      // margin: 0 auto;
+    } 
+.she-blue-ghost-btn {
+      display: inline-block;
+      border: 2px solid $she-blue;
+      padding:0.5em 1em;
+              color:$she-blue;
+      // font-size: 1em;
+       -webkit-transition: background-color 0.5s, color 0.5s;
+       -moz-transition: background-color 0.5s, color 0.5s;
+       -o-transition: background-color 0.5s, color 0.5s;
+       transition: background-color 0.5s, color 0.5s;
+
+       p, h1, h2, h3, h4, h5, a{
+        color:$she-blue;
+        text-transform:uppercase;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+       }
+    }
+.she-blue-ghost-btn:hover {
+      // background-color:$she-blue-baby;
+      color:#fff;
+      background-color:$she-blue;
+       font-weight:normal;
+      // margin: 0.2rem auto;
+       p, h1, h2, h3, h4, h5, a{
+        color:#fff;
+      }
+ 
+    } 
+.she-video-svg:hover{
+
+}
+
+
+.she-white-header-btn {
+      display: inline-block;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      padding:0.5em 1em;
+
+      font-size: 2em;
+      -webkit-transition: background-color 0.5s, color 0.5s;
+      -moz-transition: background-color 0.5s, color 0.5s;
+      -o-transition: background-color 0.5s, color 0.5s;
+      transition: background-color 0.5s, color 0.5s;
+
+
+    }
+.she-white-header-btn:hover {
+
+        font-weight:lighter;
+    } 
+

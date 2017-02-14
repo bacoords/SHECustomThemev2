@@ -1,0 +1,65 @@
+ .recurringinfo{
+  display: none !important;
+}
+
+
+.tribe-events-schedule .she-tec-upcoming-dates{
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.tribe-events-meta-group-details dl dt {
+  font-weight: 700;
+}
+
+.tribe-events-meta-group-details dl dd {
+  padding-left: 1rem;
+}
+
+h3.tribe-events-related-events-title {
+  font-weight: 700;
+}
+
+#tribe-events-content h1 {
+  font-size: 3rem;
+}
+#tribe-events-content h2 {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.tribe-events-single .tribe-events-event-meta{
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+
+.tribe-events-single .tribe-events-cal-links {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+.tribe-events-single .tribe-events-cal-links a {
+  float:left;
+  margin-left: 1rem;
+  clear: right;
+}
+
+.tribe-events-venue-map {
+  margin-top: 1rem;
+}
+
+.tribe-events-single ul.tribe-related-events .tribe-related-events-title{
+  padding-bottom: 0;
+}
+
+.tribe-events-venue-details .tribe-address{
+  font-weight: 400;
+}
+
+.tribe-events-user-recurrence-toggle {
+  display: none !important;
+}

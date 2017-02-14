@@ -1,0 +1,110 @@
+
+
+// 
+// CSS for JQuery Gallery by TCS
+// 
+ // @media #{$medium-up} {
+  /* The Gallery container (div) */
+  .gallery { 
+   height:300px;
+  // width:900px;
+  margin-bottom: 100px;
+  overflow:hidden;
+    a{
+      display:block;
+    }
+  }
+
+  /* A Gallery item container,
+   for 3, 2 and 4 column galleries */
+  .gallery .gallery-item { 
+    border-left:3px solid  #fff;
+    height:300px;
+    display:inline-block;
+    overflow:hidden;
+    padding-left:0;
+    padding-right:0;
+    @extend .text-center;
+   -webkit-transition: width 0.5s ease;
+   -moz-transition: width 0.5s ease;
+   -o-transition: width 0.5s ease;
+   transition: width 0.5s ease;
+   }
+  .gallery-columns-2 .gallery-item { 
+        border-left:3px solid  #fff;
+  height:300px; 
+    display:inline-block;
+    overflow:hidden;
+    padding-left:0;
+    padding-right:0;
+    @extend .text-center;
+   -webkit-transition: width 0.5s ease;
+   -moz-transition: width 0.5s ease;
+   -o-transition: width 0.5s ease;
+   transition: width 0.5s ease;
+  }
+  .gallery-columns-4 .gallery-item { 
+        border-left:3px solid  #fff;
+  height:300px; 
+    display:inline-block;
+    overflow:hidden;
+    padding-left:0;
+    padding-right:0;
+    @extend .text-center;
+   -webkit-transition: width 0.5s ease;
+   -moz-transition: width 0.5s ease;
+   -o-transition: width 0.5s ease;
+   transition: width 0.5s ease;
+  }
+
+  /* The actual image inside a container
+  for 3, 2 and 4 column galleries */
+  .gallery img { 
+    margin:0 auto;
+     max-width: 600px;
+    // height:500px;
+    // width:auto;
+    // border-right:3px solid  #fff;
+  }
+  .gallery-columns-2 .attachment-medium { 
+    margin:0 auto;
+  }
+  .gallery-columns-4 .attachment-thumbnail { 
+    margin:0 auto;
+  }
+
+
+  /* A gallery image caption */
+  .gallery .gallery-caption { 
+      color:#fff;
+      font-weight: lighter;
+      font-family: $body-font-family;
+      font-size:1.5rem;
+   -webkit-transition: transform 0.5s ease;
+   -moz-transition: transform 0.5s ease;
+   -o-transition: transform 0.5s ease;
+   transition: transform 0.5s ease;
+  padding-top:10px;
+
+  }
+
+  /* Definition lists elements */
+  .gallery dl {
+
+  } 
+  .gallery dt { 
+    margin-bottom:0; 
+    height:300px;
+  }
+  .gallery dd{
+    //transform: translateX(-300px);
+    height:300px;
+    top:0px;
+    z-index: 5;
+    background:rgba($she-blue, 1);
+  }
+  /* Pick the second line break if two
+  line breaks are adjacent */
+  .gallery br { display:none; visibility:hidden;}
+// }
+

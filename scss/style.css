@@ -1,0 +1,1523 @@
+/*
+    Stylesheets by Three Cords Studio
+    Brian Coords
+    URL: http://www.threecordsstudio.com
+    Grid provided by Lemonade, Created by Joe Richardson (dope)
+    Other Mixins noted as used.
+*/
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/*
+Lemonade - Official Scss Port
+Created by Joe Richardson (dope)
+*/
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 16, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.frame {
+  margin: 0 auto; }
+  /* line 19, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .frame:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+[class*='bit-'] {
+  float: left;
+  padding: 0em; }
+  /* line 31, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  [class*='bit-']:last-of-type {
+    float: right; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-1 {
+  width: 100%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-2 {
+  width: 50%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-3 {
+  width: 33.33333%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-4 {
+  width: 25%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-5 {
+  width: 20%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-6 {
+  width: 16.66667%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-7 {
+  width: 14.28571%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-8 {
+  width: 12.5%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-9 {
+  width: 11.11111%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-10 {
+  width: 10%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-11 {
+  width: 9.09091%; }
+
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+.bit-12 {
+  width: 8.33333%; }
+
+@media (max-width: 30em) {
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-1 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-2 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-3 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-4 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-5 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-6 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-7 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-8 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-9 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-10 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-11 {
+    width: 100%; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-12 {
+    width: 100%; }
+ }
+
+@media (min-width: 30em) and (max-width: 50em) {
+  /* line 58, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-4, .bit-6, .bit-8, .bit-10, .bit-12 {
+    width: 50%; }
+
+  /* line 68, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-1, .bit-2, .bit-3, .bit-5, .bit-7, .bit-9, .bit-11 {
+    width: 100%; }
+ }
+
+@media (min-width: 50em) and (max-width: 68.75em) {
+  /* line 76, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-2, .bit-7 {
+    width: 100%; }
+
+  /* line 83, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/grid */
+  .bit-4, .bit-8, .bit-10, .bit-12 {
+    width: 50%; }
+ }
+
+@media (max-width: 50em) {
+  .bit-1-of-3 {
+    width: 100%; } }
+@media (min-width: 50em) {
+  .bit-1-of-3 {
+    width: 33.333%; } }
+
+@media (max-width: 50em) {
+  .bit-2-of-3 {
+    width: 100%; } }
+@media (min-width: 50em) {
+  .bit-2-of-3 {
+    width: 66.666%; } }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+/* line 10, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+/* line 11, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.alignright {
+  float: right; }
+
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.alignleft {
+  float: left; }
+
+/* line 14, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 15, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+html {
+  font-size: 16; }
+
+/* line 19, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+body {
+  background: #fff;
+  color: #444444;
+  font-family: "museo-sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+p, a {
+  color: #444444;
+  font-family: "museo-sans", sans-serif;
+  text-decoration: none; }
+
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+p {
+  line-height: 1.6rem; }
+
+/* line 36, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+p.lead {
+  font-size: 1.8rem;
+  line-height: 2rem; }
+
+/* line 41, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+a {
+  color: #0079c2; }
+
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+a:hover {
+  color: #0079c2; }
+
+/* line 48, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter; }
+
+/* line 54, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h1 {
+  font-size: 4rem;
+  line-height: 5rem; }
+  @media (max-width: 50em) {
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+
+/* line 62, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h2 {
+  font-size: 2.4rem;
+  line-height: 3rem; }
+  @media (max-width: 50em) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2.3rem; } }
+
+/* line 70, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.3rem; }
+  @media (max-width: 50em) {
+    h3 {
+      font-size: 1.2rem;
+      line-height: 2rem; } }
+
+/* line 78, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h4 {
+  font-size: 1rem;
+  line-height: 2rem; }
+
+/* line 82, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h5 {
+  font-size: 1rem;
+  line-height: 2rem; }
+
+/* line 87, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+h6 {
+  font-size: 0.8rem;
+  line-height: 1.5rem; }
+
+/* line 92, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.hefty-header {
+  font-weight: 800;
+  padding-bottom: 0 !important; }
+
+/* line 96, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.uppercase {
+  text-transform: uppercase; }
+
+/* line 99, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.text-center, .career-box {
+  text-align: center; }
+
+/* line 102, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.text-right {
+  text-align: right; }
+
+/* line 105, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.text-left {
+  text-align: left; }
+
+@media (max-width: 50em) {
+  .she-full-height-div {
+    min-height: 300px; } }
+@media (min-width: 50em) {
+  .she-full-height-div {
+    min-height: 100vh; } }
+
+/* line 113, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.box-padding, .career-box {
+  padding-right: 10%;
+  padding-left: 10%; }
+
+/* line 123, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.box-padding-vert, .career-box {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.box-padding-right {
+  padding-right: 10%; }
+
+/* line 130, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25rem 0 1.1875rem;
+  height: 0; }
+
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.bit-80 {
+  width: 80%; }
+
+/* line 140, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.bit-20 {
+  width: 20%; }
+
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.bit-75 {
+  width: 75%; }
+
+/* line 146, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.bit-25 {
+  width: 25%; }
+
+/* line 149, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.inline-list {
+  text-align: center; }
+
+/* line 153, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.inline-list > li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1.375rem; }
+
+/* line 159, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 163, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.parallax {
+  position: relative; }
+
+/* line 167, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+body.admin-bar {
+  margin-top: -28px;
+  padding-bottom: 28px; }
+
+/* line 171, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+#wpadminbar {
+  top: auto !important;
+  bottom: 0; }
+
+/* line 175, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+#wpadminbar .quicklinks > ul > li {
+  position: relative; }
+
+/* line 178, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+  bottom: 28px; }
+
+/* line 187, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-list ul {
+  list-style: none;
+  margin-left: 0; }
+/* line 192, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-list ul > li {
+  padding-bottom: 1em;
+  padding-left: 1em; }
+/* line 199, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-list ul > li:before {
+  content: "• ";
+  font-size: 1.3rem; }
+
+/* line 202, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-sidebar li {
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem; }
+
+/* line 214, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-link {
+  display: block; }
+
+/* line 218, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.career-box:hover {
+  background: #f9f9f9; }
+  /* line 220, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .career-box:hover .she-blue-ghost-btn, .career-box:hover .searchform input[type="submit"], .searchform .career-box:hover input[type="submit"] {
+    color: #fff;
+    background-color: #0079c2;
+    font-weight: normal; }
+    /* line 225, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+    .career-box:hover .she-blue-ghost-btn p, .career-box:hover .searchform input[type="submit"] p, .searchform .career-box:hover input[type="submit"] p, .career-box:hover .she-blue-ghost-btn h1, .career-box:hover .searchform input[type="submit"] h1, .searchform .career-box:hover input[type="submit"] h1, .career-box:hover .she-blue-ghost-btn h2, .career-box:hover .searchform input[type="submit"] h2, .searchform .career-box:hover input[type="submit"] h2, .career-box:hover .she-blue-ghost-btn h3, .career-box:hover .searchform input[type="submit"] h3, .searchform .career-box:hover input[type="submit"] h3, .career-box:hover .she-blue-ghost-btn h4, .career-box:hover .searchform input[type="submit"] h4, .searchform .career-box:hover input[type="submit"] h4, .career-box:hover .she-blue-ghost-btn h5, .career-box:hover .searchform input[type="submit"] h5, .searchform .career-box:hover input[type="submit"] h5, .career-box:hover .she-blue-ghost-btn a, .career-box:hover .searchform input[type="submit"] a, .searchform .career-box:hover input[type="submit"] a {
+      color: #fff; }
+
+@media (min-width: 68.75em) {
+  .she-feature-header {
+    padding-top: 10%; } }
+
+/* line 246, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.vimeo-tagline-header {
+  display: block;
+  height: 100%; }
+
+/* line 251, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-trans-blue {
+  display: block;
+  width: 100%;
+  background: rgba(0, 121, 194, 0.8); }
+
+/* line 260, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-circular-image {
+  padding-bottom: 3em; }
+  /* line 262, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .she-circular-image img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #fff; }
+  /* line 267, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .she-circular-image img:hover {
+    -moz-box-shadow: 0px 0px 10px #292929;
+    -webkit-box-shadow: 0px 0px 10px #292929;
+    box-shadow: 0px 0px 10px #292929; }
+  /* line 272, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .she-circular-image h3 {
+    color: #0079c2;
+    font-weight: 800; }
+  /* line 276, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .she-circular-image p {
+    width: 300px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #444; }
+
+/* line 288, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-circular-image-thumb img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px; }
+/* line 299, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-circular-image-thumb img:hover {
+  -moz-box-shadow: 0px 0px 10px #292929;
+  -webkit-box-shadow: 0px 0px 10px #292929;
+  box-shadow: 0px 0px 10px #292929; }
+/* line 304, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-circular-image-thumb h3 {
+  color: #0079c2;
+  font-weight: 800; }
+/* line 308, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-circular-image-thumb p {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 318, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+article a img:hover {
+  -moz-box-shadow: 0px 0px 10px #292929;
+  -webkit-box-shadow: 0px 0px 10px #292929;
+  box-shadow: 0px 0px 10px #292929; }
+
+@media (max-width: 68.75em) {
+  .she-footer {
+    text-align: center; } }
+/* line 331, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-footer a, .she-footer p {
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif; }
+/* line 335, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-footer h6 {
+  padding-bottom: 1em;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif; }
+/* line 340, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.she-footer ul {
+  padding-bottom: 2em;
+  font-family: "Raleway", sans-serif; }
+
+/* line 351, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.google-maps {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden; }
+  @media (min-width: 50em) {
+    .google-maps {
+      padding-bottom: 25%; } }
+
+/* line 358, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
+
+/* line 373, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.no-bullet {
+  list-style: none; }
+
+/* line 376, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+.page-defaults {
+  font-weight: lighter; }
+  /* line 378, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-bottom: 2rem; }
+  /* line 384, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults h1, .page-defaults h2, .page-defaults h3, .page-defaults h4, .page-defaults h5, .page-defaults h6 {
+    padding-bottom: 2rem; }
+  /* line 387, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults ul {
+    list-style: none;
+    margin-left: 0;
+    padding-bottom: 2rem; }
+  /* line 392, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults ol {
+    margin-left: 0; }
+  /* line 395, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults ul > li {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-bottom: 1rem; }
+  /* line 401, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults ul > li:before {
+    content: "• ";
+    font-size: 1.3rem; }
+  /* line 402, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults .sd-content ul > li:before {
+    content: none; }
+  /* line 403, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults ol > li {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-bottom: 1rem; }
+  /* line 409, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+  .page-defaults blockquote {
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    border-left: 3px solid #0079c2; }
+    /* line 410, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcscustom */
+    .page-defaults blockquote p, .page-defaults blockquote h1, .page-defaults blockquote h2, .page-defaults blockquote h3, .page-defaults blockquote h4, .page-defaults blockquote h5, .page-defaults blockquote h6 {
+      color: #0079c2;
+      padding-bottom: 0; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 7, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-white-background {
+  background-color: #ffffff; }
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-shadow {
+  -moz-box-shadow: 1px 1px 3px #292929;
+  -webkit-box-shadow: 1px 1px 3px #292929;
+  box-shadow: 1px 1px 3px #292929; }
+
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-background {
+  background-color: #0079c2; }
+  /* line 19, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+  .she-blue-background p, .she-blue-background h1, .she-blue-background h2, .she-blue-background h3, .she-blue-background h4, .she-blue-background h5, .she-blue-background h6, .she-blue-background a {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0; }
+  /* line 24, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+  .she-blue-background a:hover {
+    color: #092435; }
+
+/* line 30, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-top-border {
+  border-top: 1px solid #0079c2; }
+
+/* line 33, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-triangle {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 3em;
+  border-color: #0079c2 transparent transparent transparent;
+  border-top-style: solid;
+  margin: 0 auto; }
+
+/* line 37, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-triangle-upsidedown {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 3em;
+  border-color: transparent transparent #0079c2 transparent;
+  border-bottom-style: solid;
+  margin: 0 auto; }
+
+/* line 41, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-triangle-mini {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 1em;
+  border-color: #0079c2 transparent transparent transparent;
+  border-top-style: solid;
+  margin: 0 auto; }
+
+/* line 45, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-border-bottom-blue {
+  border-bottom: 2px solid #0079c2; }
+
+/* line 48, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-white-triangle {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 3em;
+  border-color: #ffffff transparent transparent transparent;
+  border-top-style: solid;
+  margin: 0 auto;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  z-index: 3; }
+
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-blue-text {
+  color: #0079c2; }
+
+/* line 58, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-border-bottom-white {
+  border-bottom: 1px solid #fff; }
+
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-border-bottom-gray {
+  border-bottom: 1px solid #f9f9f9; }
+
+/* line 64, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-border-left-gray {
+  border-left: 1px solid #f9f9f9; }
+
+/* line 67, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/colors */
+.she-border-gray, .career-box {
+  border: 1px solid #f9f9f9; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+@media (max-width: 30em) {
+  /* line 9, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-large-up {
+    display: none !important; }
+
+  /* line 12, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-medium-up {
+    display: none !important; }
+
+  /* line 15, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .hide-for-small {
+    display: none !important; }
+ }
+
+@media (min-width: 30em) and (max-width: 50em) {
+  /* line 25, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-large-up {
+    display: none !important; }
+
+  /* line 28, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-medium-up {
+    display: none !important; }
+
+  /* line 31, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-small-only {
+    display: none !important; }
+ }
+
+@media (min-width: 50em) and (max-width: 68.75em) {
+  /* line 43, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-large-up {
+    display: none !important; }
+
+  /* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-small-only {
+    display: none !important; }
+ }
+
+@media (min-width: 68.75em) {
+  /* line 61, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .show-for-small-only {
+    display: none !important; }
+
+  /* line 64, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/visibility */
+  .hide-for-large-up {
+    display: none !important; }
+ }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-custom-navbar {
+  padding: 0.3em 0em; }
+  /* line 4, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-custom-navbar a {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: solid 2px transparent;
+    color: #0079c2; }
+  /* line 12, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-custom-navbar a:hover {
+    border-bottom: solid 2px #0079c2;
+    color: #0079c2; }
+
+/* line 18, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-navbar-fixed {
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  height: 45px;
+  border-bottom: solid 1px #ddd;
+  padding: 0.3em 0em;
+  -webkit-transition: height 0.5s, top 0.5s;
+  -moz-transition: height 0.5s, top 0.5s;
+  -o-transition: height 0.5s, top 0.5s;
+  transition: height 0.5s, top 0.5s; }
+
+/* line 33, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-navbar-fixed-body-bar {
+  position: fixed;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  top: 45px;
+  height: 45px;
+  width: 100%;
+  max-width: 100%;
+  border-bottom: solid 1px #ddd;
+  padding: 0.3em 0em;
+  display: none; }
+
+/* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-navbar-buffer {
+  height: 45px; }
+
+/* line 50, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-custom-navbar-floater {
+  float: left !important; }
+
+/* line 63, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-mobile-nav-off {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 2em;
+  text-align: center;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: rgba(9, 36, 53, 0.9);
+  -webkit-transition: height 0.5s, top 0.5s;
+  -moz-transition: height 0.5s, top 0.5s;
+  -o-transition: height 0.5s, top 0.5s;
+  transition: height 0.5s, top 0.5s; }
+
+/* line 84, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-mobile-nav-list li {
+  padding: 1em; }
+  /* line 86, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-mobile-nav-list li a {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif; }
+  /* line 93, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-mobile-nav-list li a:hover {
+    color: #fff; }
+  /* line 96, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-mobile-nav-list li .she-mobile-nav-close {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif; }
+
+/* line 118, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-social {
+  fill: #ffffff;
+  display: block; }
+
+/* line 123, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-social:hover {
+  fill: #092435; }
+
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-social-nav {
+  fill: #0079c2;
+  display: block; }
+
+/* line 132, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-social-nav:hover {
+  fill: #092435; }
+
+/* line 138, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-svg-icons:hover {
+  fill: #0079c2; }
+
+/* line 142, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-search-overlay-off {
+  position: fixed;
+  overflow: hidden;
+  width: 50%;
+  display: none;
+  top: 25%;
+  left: 25%;
+  z-index: 1001;
+  -webkit-transition: height 0.5s, top 0.5s;
+  -moz-transition: height 0.5s, top 0.5s;
+  -o-transition: height 0.5s, top 0.5s;
+  transition: height 0.5s, top 0.5s;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+
+/* line 162, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-search-overlay-close {
+  font-size: 1.5rem;
+  color: #0079c2;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; }
+
+/* line 171, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+.she-search-background {
+  border: 2px solid #0079c2;
+  background-color: white;
+  padding: 2em;
+  text-align: center; }
+  /* line 177, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/navbar */
+  .she-search-background h3 {
+    color: #0079c2; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-white-ghost-btn, .wpcf7 input[type="submit"] {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+  .she-white-ghost-btn p, .wpcf7 input[type="submit"] p, .she-white-ghost-btn h1, .wpcf7 input[type="submit"] h1, .she-white-ghost-btn h2, .wpcf7 input[type="submit"] h2, .she-white-ghost-btn h3, .wpcf7 input[type="submit"] h3, .she-white-ghost-btn h4, .wpcf7 input[type="submit"] h4, .she-white-ghost-btn h5, .wpcf7 input[type="submit"] h5, .she-white-ghost-btn a, .wpcf7 input[type="submit"] a {
+    color: #fff; }
+
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-white-ghost-btn:hover, .wpcf7 input[type="submit"]:hover {
+  background-color: rgba(0, 121, 194, 0.3); }
+
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-blue-ghost-btn, .searchform input[type="submit"], .searchform input[type="submit"]:hover {
+  display: inline-block;
+  border: 2px solid #0079c2;
+  padding: 0.5em 1em;
+  color: #0079c2;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+  /* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+  .she-blue-ghost-btn p, .searchform input[type="submit"] p, .searchform input[type="submit"]:hover p, .she-blue-ghost-btn h1, .searchform input[type="submit"] h1, .searchform input[type="submit"]:hover h1, .she-blue-ghost-btn h2, .searchform input[type="submit"] h2, .searchform input[type="submit"]:hover h2, .she-blue-ghost-btn h3, .searchform input[type="submit"] h3, .searchform input[type="submit"]:hover h3, .she-blue-ghost-btn h4, .searchform input[type="submit"] h4, .searchform input[type="submit"]:hover h4, .she-blue-ghost-btn h5, .searchform input[type="submit"] h5, .searchform input[type="submit"]:hover h5, .she-blue-ghost-btn a, .searchform input[type="submit"] a, .searchform input[type="submit"]:hover a {
+    color: #0079c2;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem; }
+
+/* line 45, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-blue-ghost-btn:hover, .searchform input[type="submit"]:hover {
+  color: #fff;
+  background-color: #0079c2;
+  font-weight: normal; }
+  /* line 51, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+  .she-blue-ghost-btn:hover p, .searchform input[type="submit"]:hover p, .she-blue-ghost-btn:hover h1, .searchform input[type="submit"]:hover h1, .she-blue-ghost-btn:hover h2, .searchform input[type="submit"]:hover h2, .she-blue-ghost-btn:hover h3, .searchform input[type="submit"]:hover h3, .she-blue-ghost-btn:hover h4, .searchform input[type="submit"]:hover h4, .she-blue-ghost-btn:hover h5, .searchform input[type="submit"]:hover h5, .she-blue-ghost-btn:hover a, .searchform input[type="submit"]:hover a {
+    color: #fff; }
+
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-white-header-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+
+/* line 75, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons */
+.she-white-header-btn:hover {
+  font-weight: lighter; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery {
+  margin-bottom: 3rem; }
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-row-case {
+  height: 350px; }
+  @media (min-width: 68.75em) {
+    .tcs-gallery-row-case {
+      margin-bottom: 3rem; } }
+
+/* line 15, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-img-wrapper {
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  transition: width 0.5s ease; }
+  @media (min-width: 68.75em) {
+    .tcs-gallery-img-wrapper {
+      float: left;
+      overflow: hidden; } }
+
+/* line 25, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-img {
+  min-height: 300px;
+  height: 300px;
+  background: #0079c2;
+  float: left; }
+  @media (max-width: 30em) {
+    .tcs-gallery-img {
+      width: 100%;
+      margin-bottom: 70px;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff; } }
+  @media (min-width: 30em) and (max-width: 68.75em) {
+    .tcs-gallery-img {
+      width: 50%;
+      margin-bottom: 70px;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff; } }
+  @media (min-width: 68.75em) {
+    .tcs-gallery-img {
+      width: 600px;
+      border-left: 3px solid #fff;
+      border-right: none; } }
+
+/* line 53, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-inner {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/* line 58, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/* line 65, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+.tcs-gallery-caption {
+  height: 50px;
+  background: #0079c2;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  /* line 75, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/tcs_galleries */
+  .tcs-gallery-caption h3 {
+    padding: 0.5em;
+    color: #fff; }
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+/* line 14, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%; }
+
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.she-vimeotag {
+  font-weight: 800; }
+
+/* line 25, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.vimeo-thumbs {
+  padding-bottom: 2rem; }
+
+/* line 29, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.vimeo-description {
+  background: #f9f9f9; }
+  @media (min-width: 50em) {
+    .vimeo-description {
+      margin-right: 10%; } }
+
+/* line 33, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.she-vimeo-overlay-off {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 4rem;
+  text-align: right;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: rgba(9, 36, 53, 0.9);
+  -webkit-transition: height 0.5s, top 0.5s;
+  -moz-transition: height 0.5s, top 0.5s;
+  -o-transition: height 0.5s, top 0.5s;
+  transition: height 0.5s, top 0.5s; }
+
+/* line 53, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.she-vimeo-overlay-close {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; }
+
+/* line 62, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/vimeo */
+.she-vimeo-overlay-link {
+  cursor: pointer; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/blogs */
+.blog-blurb {
+  background: #f9f9f9;
+  border: 1px solid #f6f6f6; }
+  /* line 5, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/blogs */
+  .blog-blurb li {
+    list-style: none;
+    padding-bottom: 1em; }
+
+/* line 14, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/blogs */
+.blog-paginate .current {
+  color: #0079c2;
+  font-weight: 800; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+@font-face {
+  font-family: 'SHE-Custom-Icons';
+  src: url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.eot?liywug');
+  src: url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.eot?#iefixliywug') format('embedded-opentype'), url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.woff?liywug') format('woff'), url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.ttf?liywug') format('truetype'), url('http://selfhelp.threecordsstudio.com/wp-content/themes/SHECustomThemev2/inc/fonts/SHE-Custom-Icons.svg?liywug#SHE-Custom-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+[class^="she-icons"], [class*=" she-icons"] {
+  font-family: 'SHE-Custom-Icons';
+  speak: none;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 6rem;
+  color: #444444;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 28, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+[class^="she-icons"]:hover {
+  color: #0079c2; }
+
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+[class*=" she-icons"]:hover {
+  color: #0079c2; }
+
+/* line 37, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__newsletter:before {
+  content: "\e61f"; }
+
+/* line 40, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__houseleaf:before {
+  content: "\e611"; }
+
+/* line 43, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__vimeo:before {
+  content: "\e61e"; }
+
+/* line 46, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__facebook:before {
+  content: "\e61b"; }
+
+/* line 49, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__linkedin:before {
+  content: "\e61c"; }
+
+/* line 52, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__rss:before {
+  content: "\e61d"; }
+
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__beaker:before {
+  content: "\e600"; }
+
+/* line 58, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__blank:before {
+  content: "\e601"; }
+
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__cash:before {
+  content: "\e602"; }
+
+/* line 64, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__certificate:before {
+  content: "\e603"; }
+
+/* line 67, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__checklist:before {
+  content: "\e604"; }
+
+/* line 70, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__classroom:before {
+  content: "\e605"; }
+
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__construction:before {
+  content: "\e606"; }
+
+/* line 76, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__cross:before {
+  content: "\e607"; }
+
+/* line 79, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__dollarsign:before {
+  content: "\e608"; }
+
+/* line 82, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__forrent:before {
+  content: "\e609"; }
+
+/* line 85, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__group:before {
+  content: "\e60a"; }
+
+/* line 88, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__hammer:before {
+  content: "\e60b"; }
+
+/* line 91, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__handshake:before {
+  content: "\e60c"; }
+
+/* line 94, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__heart:before {
+  content: "\e60d"; }
+
+/* line 97, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__house:before {
+  content: "\e60e"; }
+
+/* line 100, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__housecouple:before {
+  content: "\e60f"; }
+
+/* line 103, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__housekey:before {
+  content: "\e610"; }
+
+/* line 106, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__info:before {
+  content: "\e612"; }
+
+/* line 109, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__manquestion:before {
+  content: "\e613"; }
+
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__pipes:before {
+  content: "\e614"; }
+
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__recycle:before {
+  content: "\e615"; }
+
+/* line 118, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__speechbubble:before {
+  content: "\e616"; }
+
+/* line 121, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__warning:before {
+  content: "\e617"; }
+
+/* line 124, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__waterdrop:before {
+  content: "\e618"; }
+
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__waterglass:before {
+  content: "\e619"; }
+
+/* line 130, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.she-icons__waterhand:before {
+  content: "\e61a"; }
+
+/* line 135, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.jetpack-facebook {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Genericons';
+  font-size: 1.6rem;
+  vertical-align: top;
+  background: #3b5998;
+  color: #fff !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 0;
+  box-shadow: none;
+  padding: 8px;
+  position: relative;
+  top: -2px;
+  line-height: 1;
+  width: auto;
+  height: auto; }
+  /* line 153, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+  .jetpack-facebook:before {
+    content: '\f204'; }
+
+/* line 155, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+.jetpack-linkedin {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Genericons';
+  font-size: 1.6rem;
+  vertical-align: top;
+  background: #0077b5;
+  color: #fff !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 0;
+  box-shadow: none;
+  padding: 8px;
+  position: relative;
+  top: -2px;
+  line-height: 1;
+  width: auto;
+  height: auto; }
+  /* line 173, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/iconfont */
+  .jetpack-linkedin:before {
+    content: '\f207'; }
+
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/*
+  Lemonade - Official Scss Port
+  Created by Joe Richardson (dope)
+*/
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-white-ghost-btn, .wpcf7 input[type="submit"] {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+  .she-white-ghost-btn p, .wpcf7 input[type="submit"] p, .she-white-ghost-btn h1, .wpcf7 input[type="submit"] h1, .she-white-ghost-btn h2, .wpcf7 input[type="submit"] h2, .she-white-ghost-btn h3, .wpcf7 input[type="submit"] h3, .she-white-ghost-btn h4, .wpcf7 input[type="submit"] h4, .she-white-ghost-btn h5, .wpcf7 input[type="submit"] h5, .she-white-ghost-btn a, .wpcf7 input[type="submit"] a {
+    color: #fff; }
+
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-white-ghost-btn:hover, .wpcf7 input[type="submit"]:hover {
+  background-color: rgba(0, 121, 194, 0.3); }
+
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-blue-ghost-btn, .searchform input[type="submit"], .searchform input[type="submit"]:hover {
+  display: inline-block;
+  border: 2px solid #0079c2;
+  padding: 0.5em 1em;
+  color: #0079c2;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+  /* line 38, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+  .she-blue-ghost-btn p, .searchform input[type="submit"] p, .searchform input[type="submit"]:hover p, .she-blue-ghost-btn h1, .searchform input[type="submit"] h1, .searchform input[type="submit"]:hover h1, .she-blue-ghost-btn h2, .searchform input[type="submit"] h2, .searchform input[type="submit"]:hover h2, .she-blue-ghost-btn h3, .searchform input[type="submit"] h3, .searchform input[type="submit"]:hover h3, .she-blue-ghost-btn h4, .searchform input[type="submit"] h4, .searchform input[type="submit"]:hover h4, .she-blue-ghost-btn h5, .searchform input[type="submit"] h5, .searchform input[type="submit"]:hover h5, .she-blue-ghost-btn a, .searchform input[type="submit"] a, .searchform input[type="submit"]:hover a {
+    color: #0079c2;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem; }
+
+/* line 45, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-blue-ghost-btn:hover, .searchform input[type="submit"]:hover {
+  color: #fff;
+  background-color: #0079c2;
+  font-weight: normal; }
+  /* line 51, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+  .she-blue-ghost-btn:hover p, .searchform input[type="submit"]:hover p, .she-blue-ghost-btn:hover h1, .searchform input[type="submit"]:hover h1, .she-blue-ghost-btn:hover h2, .searchform input[type="submit"]:hover h2, .she-blue-ghost-btn:hover h3, .searchform input[type="submit"]:hover h3, .she-blue-ghost-btn:hover h4, .searchform input[type="submit"]:hover h4, .she-blue-ghost-btn:hover h5, .searchform input[type="submit"]:hover h5, .she-blue-ghost-btn:hover a, .searchform input[type="submit"]:hover a {
+    color: #fff; }
+
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-white-header-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s; }
+
+/* line 75, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/ghostbuttons.scss */
+.she-white-header-btn:hover {
+  font-weight: lighter; }
+
+/* line 5, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.jetpack-form, .wpcf7 input[type="text"], .wpcf7 input[type="tel"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 select {
+  border: 1px solid #999;
+  background: #fff;
+  font-size: 1.3rem;
+  color: #444444;
+  font-weight: lighter;
+  padding: 0.3rem 0.6rem;
+  max-width: 100%;
+  margin-bottom: 1rem; }
+
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.wpcf7 {
+  text-align: left; }
+  /* line 57, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+  .wpcf7 p, .wpcf7 h1, .wpcf7 h2, .wpcf7 h3, .wpcf7 h4, .wpcf7 h5, .wpcf7 h6 {
+    color: #444444;
+    padding-bottom: 2rem; }
+  /* line 70, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+  .wpcf7 input[type="submit"] {
+    background: #0079c2; }
+  /* line 74, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+  .wpcf7 input[type="submit"]:hover {
+    background: #fff;
+    color: #0079c2; }
+  /* line 80, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+  .wpcf7 select {
+    webkit-appearance: none;
+    /*Removes default chrome and safari style*/
+    -moz-appearance: none;
+    /* Removes Default Firefox style*/
+    appearance: none;
+    background: #fff; }
+
+/* line 93, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.searchform input[type="text"] {
+  webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  appearance: none;
+  border: 2px solid #0079c2;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-right: none;
+  background: #f9f9f9;
+  font-size: 1.3rem;
+  color: #444444;
+  font-weight: lighter;
+  padding: 0.3rem 0.6rem;
+  width: 85%; }
+/* line 110, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.searchform input[type="submit"] {
+  webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  float: right;
+  width: 15%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 0.3rem 0.6rem;
+  background: #0079c2;
+  color: #f9f9f9;
+  cursor: pointer; }
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.searchform input[type="submit"]:hover {
+  webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  appearance: none;
+  padding: 0.3rem 0.6rem;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background: #fff;
+  color: #0079c2;
+  font-weight: 800; }
+
+/* line 141, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.she-intake-overlay-off {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  left: 0;
+  text-align: left;
+  padding: 2rem 4rem;
+  display: none;
+  top: 10px;
+  color: #444444;
+  z-index: 1001;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-transition: height 0.5s, top 0.5s;
+  -moz-transition: height 0.5s, top 0.5s;
+  -o-transition: height 0.5s, top 0.5s;
+  transition: height 0.5s, top 0.5s; }
+  @media (min-width: 68.75em) {
+    .she-intake-overlay-off {
+      padding: 2rem 4rem;
+      width: 80%;
+      left: 10%; } }
+
+/* line 167, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.she-intake-overlay-close {
+  font-size: 1.5rem;
+  color: #444;
+  text-align: left;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; }
+
+/* line 178, /Applications/XAMPP/xamppfiles/htdocs/SHE/wordpress/wp-content/themes/SHECustomThemev2/scss/jetpackform */
+.she-intake-overlay-link {
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

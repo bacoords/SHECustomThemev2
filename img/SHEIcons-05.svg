@@ -1,0 +1,18 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M58.213,186c-3.3,0-7.348-2.34-8.994-5.2
+		L7.42,108.2c-1.646-2.86-1.646-7.54,0-10.4L49.219,25.2c1.646-2.86,5.694-5.2,8.994-5.2h83.574c3.3,0,7.348,2.34,8.994,5.2
+		L192.58,97.8c1.646,2.86,1.646,7.54,0,10.4l-41.799,72.6c-1.646,2.86-5.694,5.2-8.994,5.2H58.213z"/>
+</g>
+<g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M170,120c0,3.313-2.687,6-6,6H36c-3.313,0-6-2.687-6-6V87c0-3.313,2.687-6,6-6
+			h128c3.313,0,6,2.687,6,6V120z"/>
+	</g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M127,168c0,3.313-2.687,6-6,6H79c-3.313,0-6-2.687-6-6V40c0-3.313,2.687-6,6-6
+			h42c3.313,0,6,2.687,6,6V168z"/>
+	</g>
+</g>
+</svg>

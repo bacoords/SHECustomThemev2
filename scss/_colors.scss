@@ -1,0 +1,69 @@
+
+// 
+//SHE Blue Custom Divs
+// 
+@import "variables";
+@import "mixins";
+.she-white-background{
+  background-color:#ffffff;
+
+
+}
+.she-shadow{
+        -moz-box-shadow: 1px 1px 3px #292929;
+    -webkit-box-shadow: 1px 1px 3px #292929;
+       box-shadow: 1px 1px 3px #292929;
+}
+.she-blue-background{
+	background-color:$she-blue;
+  p, h1, h2, h3, h4, h5, h6, a{
+    color:#ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  a:hover{
+    color: $she-blue-night;
+  }
+}
+
+
+.she-blue-top-border{
+    border-top:1px solid $she-blue;
+}
+.she-blue-triangle{
+	@include css-triangle(3em,$she-blue,top);
+	margin: 0 auto;
+}
+.she-blue-triangle-upsidedown{
+	@include css-triangle(3em,$she-blue,bottom);
+	margin: 0 auto;
+}
+.she-blue-triangle-mini{
+  @include css-triangle(1em,$she-blue,top);
+  margin: 0 auto;
+}
+.she-border-bottom-blue{
+  border-bottom:2px solid $she-blue;
+}
+.she-white-triangle{
+	@include css-triangle(3em,#ffffff,top);
+	margin: 0 auto;
+    -webkit-transform:translateY(-5px);
+    transform:translateY(-5px);
+    z-index:3;
+}
+.she-blue-text{
+  color: $she-blue;
+}
+.she-border-bottom-white{
+  border-bottom:1px solid #fff;
+}
+.she-border-bottom-gray{
+  border-bottom:1px solid #f9f9f9;
+}
+.she-border-left-gray{
+  border-left:1px solid #f9f9f9;
+}
+.she-border-gray{
+  border:1px solid #f9f9f9;
+}

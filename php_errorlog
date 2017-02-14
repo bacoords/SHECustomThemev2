@@ -1,0 +1,2 @@
+[26-Oct-2016 07:39:43 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/briancoords/public_html/selfhelpenterprises.org/wp-content/themes/SHECustomThemev2/404.php on line 1
+[15-Nov-2016 06:01:24 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/briancoords/public_html/selfhelpenterprises.org/wp-content/themes/SHECustomThemev2/index.php on line 4
