@@ -122,7 +122,14 @@
                       <strong><?php bloginfo('name'); ?></strong>.
                       <br class="show-for-small-only"> All rights reserved.
                       <br class="show-for-small-only"> Web Design by <a href="https://briancoords.com" target="_blank"><strong>Brian Coords</strong></a>.
-                    </p>                 
+                    </p>  
+                    <div class="frame">
+                      <p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/equal-icons.2.png" alt="Icons" style="max-height: 15px; float:left; margin-top:5px; margin-right: auto; padding-right:5px">
+                        Self-Help Enterprises is an equal opportunity provider, employer, and lender.
+                      </p>
+                    </div>
+                                                  
                 </div>
                 <div class="bit-1-of-3">
                   <p class="text-right"><a href="http://www.neighborworks.org" target="new"><img src="<?php echo get_template_directory_uri(); ?>/img/NeighborLogo.png" alt="Neighborworks Logo"></a></p>
