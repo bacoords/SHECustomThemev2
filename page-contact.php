@@ -113,7 +113,7 @@ Template Name: Contact Page Template
                     <div class="bit-4 text-center"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=xgxexupab&p=oi&m=1116313115863&sit=tut4q8oib&f=c3b373c6-daf4-4a53-9ac0-2cff4d91ceb1" target="_blank">
                         <span class="she-icons__newsletter"></span></a>
 				    </div>
-                    <div class="bit-4 text-center"><a href="http://selfhelp.threecordsstudio.com/news-multimedia/videos/" target="_blank">
+                    <div class="bit-4 text-center"><a href="https://vimeo.com/user1983551" target="_blank">
                         <span class="she-icons__vimeo"></span></a>
 				    </div>
                 </div>
@@ -121,7 +121,7 @@ Template Name: Contact Page Template
 				<h2 style="text-align: center;"><strong>LOCATION</strong></h2>
 				
                 <div class="box-padding">
-                    <div class="google-maps"><iframe style="border: 0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAF9M0oLUumyRJ-0NMlKt-rmXyik_4K7ag&amp;q=8445+W.+Elowin+Court+Visalia+CA+93291" width="800" height="200" frameborder="0"></iframe></div>
+                    <div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.71312468193!2d-119.38736368472277!3d36.34350198004511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809527a53ce408cf%3A0x8604f2e5f37feb40!2sSelf-Help+Enterprises!5e0!3m2!1sen!2sus!4v1503585872056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
 			</div>
 		</div>

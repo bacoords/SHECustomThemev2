@@ -125,7 +125,7 @@
                     </p>  
                     <div class="frame">
                       <p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/equal-icons.2.png" alt="Icons" style="max-height: 15px; float:left; margin-top:5px; margin-right: auto; padding-right:5px">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/equal-icons.2.png" alt="Icons" style="max-height: 30px; float:left; padding-right:5px">
                         Self-Help Enterprises is an equal opportunity provider, employer, and lender.
                       </p>
                     </div>
