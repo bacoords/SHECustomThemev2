@@ -11,13 +11,13 @@ Template Name: Vimeo Template Page
 get_header(); 
 
 ?>
-<link href="http://selfhelp.threecordsstudio.com/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css" rel="stylesheet">
+<link href="https://www.selfhelpenterprises.org/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css" rel="stylesheet">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script>
 
-		var apiEndpoint = 'http://vimeo.com/api/v2/';
-		var oEmbedEndpoint = 'http://vimeo.com/api/oembed.json';
+		var apiEndpoint = 'https://vimeo.com/api/v2/';
+		var oEmbedEndpoint = 'https://vimeo.com/api/oembed.json';
 		var oEmbedCallback = 'switchVideo';
 		var videosCallback = 'setupGallery';
 		var vimeoUsername = 'user1983551';
