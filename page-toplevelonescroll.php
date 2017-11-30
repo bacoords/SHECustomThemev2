@@ -18,26 +18,26 @@ Template Name: Top-Level Page Template (One Page Scroller)
     <section>
       <div class="frame she-blue-background">
 
-    
+
         <div class="bit-1">
           <br><BR>
           <h1 class="uppercase text-center"><?php the_title(); ?></h1>
           <BR><BR>
         </div>
-        
+
       <div class="frame she-blue-background">
-      
+
 		<?php
 			$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'asc', 'parent'=>$post->ID, 'exclude'=>289 ) );
 
-			foreach( $mypages as $page ) {		
+			foreach( $mypages as $page ) {
 				// $content = $page->post_content;
 				// if ( ! $content ) // Check for empty page
 				// 	continue;
 
 				// $content = apply_filters( 'the_content', $content );
                $counter+=1;
-               
+
                 ?>
 
                   <div class="bit-3">
@@ -45,10 +45,10 @@ Template Name: Top-Level Page Template (One Page Scroller)
 
                       <a href="#<?php echo $page->post_name; ?>">
 
-                        <?php 
-                        $imageblurb = get_post_meta( $page->ID, '_she_page_page_blurb_image', 1 );
-                        $imageID = get_attachment_id_from_src($imageblurb);
-                        $image = wp_get_attachment_image($imageID, 'she-circular-image');    
+                        <?php
+                        // $imageblurb = get_post_meta( $page->ID, '_she_page_page_blurb_image', 1 );
+                        // $imageID = get_attachment_id_from_src($imageblurb);
+                        $image = wp_get_attachment_image(get_post_meta( $page->ID, '_she_page_page_blurb_image_id', 1 ), 'she-circular-image');
                         echo $image;
                         ?>
 
@@ -69,7 +69,7 @@ Template Name: Top-Level Page Template (One Page Scroller)
 		 } ?>
 
 
-      
+
         </div>
           <BR><BR><BR><BR>
       </div>
@@ -82,7 +82,7 @@ Template Name: Top-Level Page Template (One Page Scroller)
 
 
 
-    <!-- Main Content Parent Page-->    
+    <!-- Main Content Parent Page-->
 		<div class="frame she-white-background">
 			<div class="bit-1">
 				<div class="box-padding page-defaults">
@@ -99,13 +99,13 @@ Template Name: Top-Level Page Template (One Page Scroller)
 	<?php
 		$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'asc', 'parent'=>$post->ID ) );
 
-		foreach( $mypages as $page ) {		
+		foreach( $mypages as $page ) {
 
 		?>
 				<article>
 			<!-- Start the Header for Each Page -->
 					<?php
-					 	if ( has_post_thumbnail($page->ID) ) { 
+					 	if ( has_post_thumbnail($page->ID) ) {
 
 					 		$posturl = wp_get_attachment_url( get_post_thumbnail_id($page->ID) );
 					 		?>
@@ -121,7 +121,7 @@ Template Name: Top-Level Page Template (One Page Scroller)
 										</div>
 									</div>
 						     	 <div class="she-blue-triangle"></div>
-					     	 
+
 					    </div>
 					  <?php } else { ?>
 					<div class="frame">
@@ -136,25 +136,25 @@ Template Name: Top-Level Page Template (One Page Scroller)
 					</div>
 					<?php  } ?>
 
-		
-				
+
+
 
 			<!-- End the Header for Each Page -->
 
 
 
 			<!-- Begin Content For each Page -->
-			
+
 			<div class="frame">
 				<div class="bit-1">
 									 <?php $content = $page->post_content;
 			if ( ! $content ) // Check for empty page
 				continue;
 
-			$content = apply_filters( 'the_content', $content ); ?>	
-						
+			$content = apply_filters( 'the_content', $content ); ?>
+
 						<div class="box-padding page-defaults"><?php echo $content; ?></div>
-					
+
 				</div>
 			</div>
 			<div class="frame">
@@ -163,12 +163,12 @@ Template Name: Top-Level Page Template (One Page Scroller)
 				</div>
 			</div>
 			</article>
-				
+
 			<!-- End Content For each Page -->
 
 
 				<?php
-				}	
+				}
 			?>
 		<!-- End Child Page Loop -->
 
@@ -176,7 +176,7 @@ Template Name: Top-Level Page Template (One Page Scroller)
 
 
 	</div>
-	
+
 
 
 
@@ -185,6 +185,6 @@ Template Name: Top-Level Page Template (One Page Scroller)
 
 				<?php endwhile; else: ?>
 					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-				<?php endif; ?>    
+				<?php endif; ?>
     <!-- End Main Content -->
 <?php get_footer(); ?>
