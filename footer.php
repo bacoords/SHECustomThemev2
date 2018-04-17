@@ -1,7 +1,7 @@
 
       <!-- Start Get Involved w/image -->
 <?php if (is_page( array('about-us','homeownership-education', 'buy-a-home','build-your-own-home','rental-communities','repair-your-home','safe-drinking-water','sanitary-sewer-systems','leadership-development','drought-response') ) || is_page_template( 'page-front.php' ) ): ?>
-  
+
 
 
 
@@ -14,16 +14,16 @@
             <div class=" she-trans-blue"><BR><BR>
 <!--               data-bottom-top="transform:translate(0px,-100px); opacity:0;" data-top-top="transform:translate(0px,100px); opacity:1;"-->
               <a href="<?php echo get_site_url(); ?>/get-involved/" class="she-white-ghost-btn"><h2>Get Involved</h2></a><BR><BR><BR>
-              
+
             </div></div>
             <BR><BR>
           </div>
             <BR><BR>
 
 
-        </div>  
+        </div>
       </section>
-     
+
 <?php endif ?>
 
  <!-- End Get Involved w/image -->
@@ -36,12 +36,12 @@
   <!-- Begin Footer -->
 <footer>
   <section class="she-footer she-blue-background">
-    
-    
+
+
 
         <div class="frame she-blue-background">
           <div class="bit-1">
-                     <BR><BR><BR> 
+                     <BR><BR><BR>
           </div>
 
         </div>
@@ -73,7 +73,7 @@
                 <li><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=xgxexupab&p=oi&m=1116313115863&sit=tut4q8oib&f=c3b373c6-daf4-4a53-9ac0-2cff4d91ceb1" class="she-social" ><svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"> <path id="RSS" d="M25.4,74.569c2.18,2.177,3.506,5.131,3.514,8.42c-0.008,3.283-1.334,6.237-3.506,8.406L25.4,91.399 c-2.176,2.166-5.148,3.49-8.453,3.49c-3.301,0-6.266-1.328-8.441-3.494C6.336,89.227,5,86.276,5,82.989 c0-3.289,1.336-6.25,3.506-8.423v0.003c2.176-2.168,5.141-3.502,8.441-3.502C20.252,71.067,23.221,72.404,25.4,74.569z M25.4,74.566 v0.003c0.004,0,0.004,0,0.004,0L25.4,74.566z M8.506,91.399c0,0,0,0,0-0.004c-0.004,0-0.004,0-0.004,0L8.506,91.399z M5.01,35.604 v17.185c11.219,0.007,21.83,4.414,29.771,12.367c7.939,7.928,12.328,18.555,12.346,29.813h0.006V95h17.256 c-0.014-16.37-6.668-31.198-17.426-41.964C36.203,42.272,21.381,35.614,5.01,35.604z M5.041,5v17.177 C45.145,22.206,77.746,54.858,77.773,95H95c-0.012-24.81-10.096-47.288-26.393-63.596C52.305,15.101,29.842,5.011,5.041,5z"/></svg>&nbsp;&nbsp;Newsletters</a></li>
                 </ul>
             </div>
-    
+
             <div class="bit-5">
               <h6 class="uppercase">Staff/Board</h6>
               <ul class="no-bullet">
@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="frame">
           <div class="bit-1">
             <div class="box-padding">
@@ -118,30 +118,30 @@
                   </script>
                   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <!--                    End Google Translate-->
-                   <p>&copy; <?php echo date('Y'); ?> 
+                   <p>&copy; <?php echo date('Y'); ?>
                       <strong><?php bloginfo('name'); ?></strong>.
                       <br class="show-for-small-only"> All rights reserved.
-                      <br class="show-for-small-only"> Web Design by <a href="https://briancoords.com" target="_blank"><strong>Brian Coords</strong></a>.
-                    </p>  
+                      <!-- <br class="show-for-small-only"> Web Design by <a href="https://briancoords.com" target="_blank"><strong>Brian Coords</strong></a>. -->
+                    </p>
                     <div class="frame">
                       <p>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/equal-icons.2.png" alt="Icons" style="max-height: 30px; float:left; padding-right:5px">
                         Self-Help Enterprises is an equal opportunity provider, employer, and lender.
                       </p>
                     </div>
-                                                  
+
                 </div>
                 <div class="bit-1-of-3">
                   <p class="text-right"><a href="http://www.neighborworks.org" target="new"><img src="<?php echo get_template_directory_uri(); ?>/img/NeighborLogo.png" alt="Neighborworks Logo"></a></p>
                 </div>
               </div>
- 
+
               <BR><BR><BR><BR>
             </div>
           </div>
         </div>
 
-    </section>  
+    </section>
     <!-- End Footer -->
 </footer>
 
@@ -156,7 +156,7 @@
 
 
    <?php wp_footer(); ?>
-   
+
   <?php  she_article_toggle_script(); ?>
   <?php she_call_property_rc_slider_script(); ?>
   <?php she_call_property_upcoming_slider_script(); ?>
@@ -164,10 +164,10 @@
   <?php  she_call_smooth_scroll_script(); ?>
 
    	<script src="<?php echo get_template_directory_uri(); ?>/js/tcs-galleries-v2.js"></script>
-  
-      <script src="<?php echo get_template_directory_uri(); ?>/js/top-menu-scroll.js"></script> 
+
+      <script src="<?php echo get_template_directory_uri(); ?>/js/top-menu-scroll.js"></script>
       <script src="<?php echo get_template_directory_uri(); ?>/js/skrollr.min.js"></script>
-       <script src="<?php echo get_template_directory_uri(); ?>/js/she-final-scripts.js"></script> 
-   <script src="<?php echo get_template_directory_uri(); ?>/inc/venobox/venobox.min.js"></script> 
+       <script src="<?php echo get_template_directory_uri(); ?>/js/she-final-scripts.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/inc/venobox/venobox.min.js"></script>
   </body>
 </html>

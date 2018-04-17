@@ -28,7 +28,7 @@ function example_add_dashboard_widgets() {
                  'tcs_dashboard_widget',         // Widget slug.
                  'BrianCoords.com - Support',         // Title.
                  'example_dashboard_widget_function' // Display function.
-        );	
+        );
 }
 add_action( 'wp_dashboard_setup', 'example_add_dashboard_widgets' );
 
@@ -43,15 +43,15 @@ function example_dashboard_widget_function() {
 
 //Enable Post Thumbnails (Featured Images)
 add_theme_support('post-thumbnails');
-add_image_size( 'she-circular-image', 300, 200, array( 'center', 'center' )  ); 
-add_image_size( 'gallery-image', 600, 300, array( 'center', 'center' )  ); 
+add_image_size( 'she-circular-image', 300, 200, array( 'center', 'center' )  );
+add_image_size( 'gallery-image', 600, 300, array( 'center', 'center' )  );
 // Make Images NOT Clickable by Default
 update_option('image_default_link_type','none');
 // Remove formatting of gallery
 add_filter( 'use_default_gallery_style', '__return_false' );
-//Adds gallery shortcode defaults of size="medium" and columns="3" 
+//Adds gallery shortcode defaults of size="medium" and columns="3"
 function she_change_default_gallery( $out, $pairs, $atts ) {
-   
+
     $atts = shortcode_atts( array(
         'columns' => '3',
         'link' => 'file',
@@ -67,6 +67,16 @@ function she_change_default_gallery( $out, $pairs, $atts ) {
 add_filter( 'shortcode_atts_gallery', 'she_change_default_gallery', 10, 3 );
 
 
+/**
+ * Show all galleries in gallery query
+ */
+function galleriers_adjust_queries($query){
+   if ( ! is_admin() && is_post_type_archive( 'she_photo_gall' ) && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', -1 );
+   }
+}
+add_action( 'pre_get_posts', 'galleriers_adjust_queries' );
+
 
 
 //
@@ -77,7 +87,7 @@ function my_login_logo() { ?>
         body.login div#login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/SHELogo50Resize.jpg);
             background-size:300px 350px;
-            width: 300px; 
+            width: 300px;
             height: 350px;
         }
     </style>
@@ -103,14 +113,14 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 // Add SHE Color to TINY MCE Color Picker
 function my_mce4_options( $init ) {
 $default_colours = '
-    "000000", "Black",        "993300", "Burnt orange", "333300", "Dark olive",   "003300", "Dark green",   "003366", "Dark azure",   "000080", "Navy Blue",      "333399", "Indigo",       "333333", "Very dark gray", 
-    "800000", "Maroon",       "FF6600", "Orange",       "808000", "Olive",        "008000", "Green",        "008080", "Teal",         "0000FF", "Blue",           "666699", "Grayish blue", "808080", "Gray", 
-    "FF0000", "Red",          "FF9900", "Amber",        "99CC00", "Yellow green", "339966", "Sea green",    "33CCCC", "Turquoise",    "3366FF", "Royal blue",     "800080", "Purple",       "999999", "Medium gray", 
-    "FF00FF", "Magenta",      "FFCC00", "Gold",         "FFFF00", "Yellow",       "00FF00", "Lime",         "00FFFF", "Aqua",         "00CCFF", "Sky blue",       "993366", "Brown",        "C0C0C0", "Silver", 
+    "000000", "Black",        "993300", "Burnt orange", "333300", "Dark olive",   "003300", "Dark green",   "003366", "Dark azure",   "000080", "Navy Blue",      "333399", "Indigo",       "333333", "Very dark gray",
+    "800000", "Maroon",       "FF6600", "Orange",       "808000", "Olive",        "008000", "Green",        "008080", "Teal",         "0000FF", "Blue",           "666699", "Grayish blue", "808080", "Gray",
+    "FF0000", "Red",          "FF9900", "Amber",        "99CC00", "Yellow green", "339966", "Sea green",    "33CCCC", "Turquoise",    "3366FF", "Royal blue",     "800080", "Purple",       "999999", "Medium gray",
+    "FF00FF", "Magenta",      "FFCC00", "Gold",         "FFFF00", "Yellow",       "00FF00", "Lime",         "00FFFF", "Aqua",         "00CCFF", "Sky blue",       "993366", "Brown",        "C0C0C0", "Silver",
     "FF99CC", "Pink",         "FFCC99", "Peach",        "FFFF99", "Light yellow", "CCFFCC", "Pale green",   "CCFFFF", "Pale cyan",    "99CCFF", "Light sky blue", "CC99FF", "Plum",         "FFFFFF", "White"
 ';
 $custom_colours = '
-    "2185c7", "SHE Blue", 
+    "2185c7", "SHE Blue",
 ';
 $init['textcolor_map'] = '['.$custom_colours.']'; // build colour grid default+custom colors
 $init['textcolor_rows'] = 6; // enable 6th row for custom colours in grid
@@ -177,9 +187,9 @@ function reverse_strrchr($haystack, $needle, $trail) {
 require_once('inc/functions-disable-comments.php');
 
 
-// 
+//
 // Enqueue Scripts
-// 
+//
 
 
 /**
@@ -195,10 +205,10 @@ require_once('inc/functions-disable-comments.php');
 //
 //add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
-    //she_call_property_rc_slider_script(); 
-// she_call_property_slider_script();  
+    //she_call_property_rc_slider_script();
+// she_call_property_slider_script();
   // she_call_smooth_scroll_script();
- // she_call_blog_slider_script(); 
+ // she_call_blog_slider_script();
 
 
 // function custom_shortcode_scripts() {
@@ -217,14 +227,14 @@ require_once('inc/functions-disable-comments.php');
 // function custom_template_scripts() {
 //     if ( is_page_template( 'single-she_property.php' ) ) {
 //        wp_enqueue_script('Custom Gallery Script', get_template_directory_uri() . '/js/tcs-gallery-script.js', array(), '1.0.0', true );
-//     } 
+//     }
 // }
 // add_action('wp_enqueue_scripts','custom_template_scripts' );
 
 
-// 
+//
 // Widgetize
-// 
+//
 
 /**
  * Register our sidebars and widgetized areas.
@@ -444,20 +454,20 @@ function she_sc_display_props( $atts, $content = null ) {
         $current_title = $press->post_title;
         $current_excerpt = $press->post_excerpt;
         $current_art_slug = $press->post_name;
-        $current_pdf = get_post_meta($press->ID, '_she_newsletter_news_pdf',TRUE); 
+        $current_pdf = get_post_meta($press->ID, '_she_newsletter_news_pdf',TRUE);
         // setup_postdata($press);
 
-        ?>        
-            
+        ?>
+
 
                 <div class="row">
-                   
-                   
-                        
+
+
+
                         <h3><strong><?php echo $current_title; ?></strong></h3>
-                       
+
                     <?php echo $current_content; ?>
-                      
+
                     <div class="text-right">
                         <a href="<?php echo $current_pdf; ?>" class="she-blue-ghost-btn text-right" target="new">READ</a>
                     </div>
@@ -465,12 +475,12 @@ function she_sc_display_props( $atts, $content = null ) {
                 <div class="row">
                     <br>
                 </div>
-            
+
 
         <?php
-         
+
     }
-    // wp_reset_postdata(); 
+    // wp_reset_postdata();
     return ob_get_clean();
 
 
@@ -587,18 +597,18 @@ function she_sc_display_press( $atts, $content = null ) {
         $current_title = $press->post_title;
         $current_excerpt = $press->post_excerpt;
         $current_art_slug = $press->post_name;
-        $current_pdf = get_post_meta($press->ID, '_she_media_news_pdf',TRUE); 
-        $current_name = get_post_meta($press->ID, '_she_media_news_name',TRUE); 
-        $current_date = get_post_meta($press->ID, '_she_media_news_date',TRUE); 
+        $current_pdf = get_post_meta($press->ID, '_she_media_news_pdf',TRUE);
+        $current_name = get_post_meta($press->ID, '_she_media_news_name',TRUE);
+        $current_date = get_post_meta($press->ID, '_she_media_news_date',TRUE);
         // setup_postdata($press);
 
-        ?>        
-            
+        ?>
+
 
                 <div class="row">
-                   
-                   
-                        
+
+
+
                         <h3><strong><?php echo $current_title; ?></strong></h3>
 
                         <h4>
@@ -607,9 +617,9 @@ function she_sc_display_press( $atts, $content = null ) {
                             <small> on <?php echo $current_date; ?></small>
                             <?php } ?>
                         </h4>
-                       
+
                     <?php echo $current_content; ?>
-                      
+
                     <div class="text-right">
                         <a href="<?php echo $current_pdf; ?>" class="she-blue-ghost-btn text-right" target="new">READ</a>
                     </div>
@@ -617,12 +627,12 @@ function she_sc_display_press( $atts, $content = null ) {
                 <div class="row">
                     <br>
                 </div>
-            
+
 
         <?php
-         
+
     }
-    // wp_reset_postdata(); 
+    // wp_reset_postdata();
     return ob_get_clean();
 
 
@@ -720,20 +730,20 @@ function she_sc_display_news( $atts, $content = null ) {
         $current_title = $press->post_title;
         $current_excerpt = $press->post_excerpt;
         $current_art_slug = $press->post_name;
-        $current_pdf = get_post_meta($press->ID, '_she_newsletter_news_pdf',TRUE); 
+        $current_pdf = get_post_meta($press->ID, '_she_newsletter_news_pdf',TRUE);
         // setup_postdata($press);
 
-        ?>        
-            
+        ?>
+
 
                 <div class="row">
-                   
-                   
-                        
+
+
+
                         <h3><strong><?php echo $current_title; ?></strong></h3>
-                       
+
                     <?php echo $current_content; ?>
-                      
+
                     <div class="text-right">
                         <a href="<?php echo $current_pdf; ?>" class="she-blue-ghost-btn text-right" target="new">READ</a>
                     </div>
@@ -741,12 +751,12 @@ function she_sc_display_news( $atts, $content = null ) {
                 <div class="row">
                     <br>
                 </div>
-            
+
 
         <?php
-         
+
     }
-    // wp_reset_postdata(); 
+    // wp_reset_postdata();
     return ob_get_clean();
 
 
@@ -930,7 +940,7 @@ function myplugin_meta_box_callback( $post ) {
         _e( 'Save gallery to use anywhere on site.', 'myplugin_textdomain' );
         echo '</label>';
         echo '<p>Instructions: Copy/paste the custom shortcode below to embed your gallery in any page.</p>';
-        echo '<h3>ShortCode: [ShowGallery id="' . $post->ID . '"]</h3>'; 
+        echo '<h3>ShortCode: [ShowGallery id="' . $post->ID . '"]</h3>';
 }
 add_filter('manage_edit-she_photo_gall_columns', 'my_columns');
 function my_columns($columns) {
@@ -942,7 +952,7 @@ function my_show_columns($name) {
     global $post;
     switch ($name) {
         case 'shortcodes':
-            $shortcodes = 'ShortCode: [ShowGallery id="' . $post->ID . '"]'; 
+            $shortcodes = 'ShortCode: [ShowGallery id="' . $post->ID . '"]';
             echo $shortcodes;
     }
 }
@@ -986,7 +996,7 @@ function she_page_vimeo_metaboxes( $meta_boxes ) {
                         'id'   => $prefix . 'coverimage',
                         'type' => 'file'
                     ),
- 
+
                 ),
             );
 
@@ -1078,7 +1088,7 @@ function she_orbit_options_generate() {
     <div class="frame">
         <div class="bit-1 she-full-height-div she-blue-background text-center" style="background:url('<?php echo of_get_option('orbit_front_image_one'); ?>') no-repeat center; background-size:cover;">
           <div class="frame">
-         
+
             <div class="bit-1 text-center">
                 <div class="she-feature-header" >
                   <div class="she-trans-blue box-padding box-padding-vert">
@@ -1091,7 +1101,7 @@ function she_orbit_options_generate() {
         </div>
     </div>
 
-          
+
 <?
 
 
@@ -1116,7 +1126,7 @@ function she_orbit_options_generate() {
 //    if ( ! $she_blog_add_script ) {
 //        return;
 //    }
-//        
+//
 //    else {
 //    return she_article_toggle_script();
 //    }
@@ -1156,20 +1166,20 @@ function she_article_toggle_script(){
         // echo ' $(this).is(":visible") ? $(".art-toggle-btn-' . $current_art . '").text("READ") : $(".art-toggle-btn-' . $current_art . '").text("HIDE");';
         echo '});';
     }
-     
+
 
     echo "$('a').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
             }, 500);
-           
+
             return false;
         });";
-  
+
     echo "});";
     echo "</script>";
-    
-             
+
+
 }
 // Creates Loop of Blog Posts
 function she_article_toggle_generate(){
@@ -1196,8 +1206,8 @@ function she_article_toggle_generate(){
         $current_art =  $post->ID;
         $current_art_slug = $post->post_name;
         setup_postdata($post);
-        ?>        
-            
+        ?>
+
 
                 <div class="row she-article-row">
                     <div class="she-circular-image-thumb">
@@ -1218,12 +1228,12 @@ function she_article_toggle_generate(){
                 <div class="row">
                     <hr>
                 </div>
-            
+
 
         <?php
-         
+
     }
-    wp_reset_postdata(); 
+    wp_reset_postdata();
 
 }
 
@@ -1252,12 +1262,12 @@ function she_call_property_slider_script() {
     if ( ! $she_property_add_script ) {
         return;
     }
-        
+
     else {
     return she_property_toggle_script();
     }
 }
-// Script for She 
+// Script for She
 function she_property_toggle_script(){
 
     echo  "<script>
@@ -1291,19 +1301,19 @@ function she_property_toggle_script(){
         // echo ' $(this).is(":visible") ? $(".art-toggle-btn-' . $current_art . '").text("READ") : $(".art-toggle-btn-' . $current_art . '").text("HIDE");';
         echo '});';
     }
-     
+
 
     echo "});";
     echo "$('a').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
             }, 500);
-           
+
             return false;
         });";
     echo "</script>";
-    
-             
+
+
 }
 // Creates Loop of Properties
 function she_property_toggle_generate(){
@@ -1330,25 +1340,25 @@ function she_property_toggle_generate(){
         $current_art =  $post->ID;
         $current_art_slug = $post->post_name;
         setup_postdata($post);
-        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true ); 
+        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true );
         $curcity = get_post_meta( get_the_ID(),'_she_property_city' , true );
         $curstate = get_post_meta( get_the_ID(),'_she_property_state' , true );
-        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true ); 
-         
+        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true );
+
         $curaddressmaps = str_replace("%20", "+", urlencode($curaddress));
         $curcitymaps = str_replace("%20", "+", urlencode($curcity));
         $curgmapsoverride = get_post_meta( get_the_ID(),'_she_property_custom_gmap' , true );
         if($curgmapsoverride != ''){
             $gmapslink = $curgmapsoverride;
         } else {
-            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;   
+            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;
         }
-                                 
-        
-                        
-                        
-        ?>        
-            
+
+
+
+
+        ?>
+
 
 
                 <div class="frame she-article-row" id="<?php echo $current_art_slug; ?>">
@@ -1359,22 +1369,22 @@ function she_property_toggle_generate(){
 
                                     <a href="#<?php echo $current_art_slug; ?>" class="art-toggle-btn-<?php echo $current_art; ?>"><?php the_post_thumbnail('she-circular-image','class=alignleft'); ?></a>
                                 </div>
-                                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
-                                    <h3><?php the_title(); ?></h3>        
+                                    <h3><?php the_title(); ?></h3>
                                 </div>
-                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
                                     <a href="#<?php echo $current_art_slug; ?>" class="she-blue-ghost-btn text-right art-toggle-btn-<?php echo $current_art; ?>">LEARN MORE</a>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="frame">  
+                        <div class="frame">
                             <div class="bit-1">
                                 <div class="art-toggle-body-<?php echo $current_art; ?> box-padding" style="display:none">
                                    <div class="frame">
@@ -1395,13 +1405,13 @@ function she_property_toggle_generate(){
                 <div class="frame">
                     <div class="bit-1">
                         <br>
-                    </div>  
+                    </div>
                 </div>
 
         <?php
-         
+
     }
-    wp_reset_postdata(); 
+    wp_reset_postdata();
 
 }
 //UPCOMING CATEGORY
@@ -1414,12 +1424,12 @@ function she_call_property_upcoming_slider_script() {
     if ( ! $she_property_upcoming_add_script ) {
         return;
     }
-        
+
     else {
     return she_property_upcoming_toggle_script();
     }
 }
-// Script for She 
+// Script for She
 function she_property_upcoming_toggle_script(){
 
     echo  "<script>
@@ -1453,19 +1463,19 @@ function she_property_upcoming_toggle_script(){
         // echo ' $(this).is(":visible") ? $(".art-toggle-btn-' . $current_art . '").text("READ") : $(".art-toggle-btn-' . $current_art . '").text("HIDE");';
         echo '});';
     }
-     
+
 
     echo "});";
     echo "$('a').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
             }, 500);
-           
+
             return false;
         });";
     echo "</script>";
-    
-             
+
+
 }
 // Creates Loop of Properties (upcoming)
 function she_property_upcoming_toggle_generate(){
@@ -1492,24 +1502,24 @@ function she_property_upcoming_toggle_generate(){
         $current_art =  $post->ID;
         $current_art_slug = $post->post_name;
         setup_postdata($post);
-        
-        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true ); 
+
+        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true );
         $curcity = get_post_meta( get_the_ID(),'_she_property_city' , true );
         $curstate = get_post_meta( get_the_ID(),'_she_property_state' , true );
-        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true );   
+        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true );
         $curaddressmaps = str_replace("%20", "+", urlencode($curaddress));
         $curcitymaps = str_replace("%20", "+", urlencode($curcity));
         $curgmapsoverride = get_post_meta( get_the_ID(),'_she_property_custom_gmap' , true );
         if($curgmapsoverride != ''){
             $gmapslink = $curgmapsoverride;
         } else {
-            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;   
+            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;
         }
-            
-                        
-                        
-        ?>        
-            
+
+
+
+        ?>
+
 
 
                 <div class="frame she-article-row" id="<?php echo $current_art_slug; ?>">
@@ -1520,22 +1530,22 @@ function she_property_upcoming_toggle_generate(){
 
                                     <a href="#<?php echo $current_art_slug; ?>" class="art-toggle-btn-<?php echo $current_art; ?>"><?php the_post_thumbnail('she-circular-image','class=alignleft'); ?></a>
                                 </div>
-                                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
-                                    <h3><?php the_title(); ?></h3>        
+                                    <h3><?php the_title(); ?></h3>
                                 </div>
-                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
                                     <a href="#<?php echo $current_art_slug; ?>" class="she-blue-ghost-btn text-right art-toggle-btn-<?php echo $current_art; ?>">LEARN MORE</a>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="frame">  
+                        <div class="frame">
                             <div class="bit-1">
                                 <div class="art-toggle-body-<?php echo $current_art; ?> box-padding" style="display:none">
                                    <div class="frame">
@@ -1556,29 +1566,29 @@ function she_property_upcoming_toggle_generate(){
                 <div class="frame">
                     <div class="bit-1">
                         <br>
-                    </div>  
+                    </div>
                 </div>
 
         <?php
-         
+
     }
-    wp_reset_postdata(); 
+    wp_reset_postdata();
 
 }
 
 
 
 
-// 
+//
 // Include Smooth Scroll if No Conflict
-// 
+//
 function she_call_smooth_scroll_script() {
     global $she_set_smooth_scroll_script;
 
     if ( ! $she_set_smooth_scroll_script ) {
         return;
     }
-        
+
     else {
     return she_smooth_scroll_script();
     }
@@ -1604,7 +1614,7 @@ function she_smooth_scroll_script(){
     </script>
       <!-- End of SMOOTH SCROLL -->
 
-    <?php 
+    <?php
 }
 
 
@@ -1623,12 +1633,12 @@ function she_call_property_rc_slider_script() {
     if ( ! $she_property_rc_add_script ) {
         return;
     }
-        
+
     else {
     return she_property_rc_toggle_script();
     }
 }
-// Script for She 
+// Script for She
 function she_property_rc_toggle_script(){
 
     echo  "<script>
@@ -1653,7 +1663,7 @@ function she_property_rc_toggle_script(){
     $articles_array = get_posts( $args );
     foreach ($articles_array as $article ) {
         $current_art =  $article->ID;
-        
+
         echo '$(".art-toggle-btn-' . $current_art . '").click(function(){';
         echo '$(".art-toggle-body-' . $current_art . '").slideToggle(500);';
         echo '$(".art-toggle-excerpt-' . $current_art . '").toggle(10, function(e){
@@ -1663,19 +1673,19 @@ function she_property_rc_toggle_script(){
         // echo ' $(this).is(":visible") ? $(".art-toggle-btn-' . $current_art . '").text("READ") : $(".art-toggle-btn-' . $current_art . '").text("HIDE");';
         echo '});';
     }
-     
+
 
     echo "});";
     echo "$('a').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
             }, 500);
-           
+
             return false;
         });";
     echo "</script>";
-    
-             
+
+
 }
 // Creates Loop of Properties
 function she_property_rc_toggle_generate(){
@@ -1703,20 +1713,20 @@ function she_property_rc_toggle_generate(){
         $current_art_slug = $post->post_name;
         setup_postdata($post);
         $curunits = get_post_meta( get_the_ID(),'_she_property_total_units' , true );
-        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true ); 
+        $curaddress = get_post_meta( get_the_ID(),'_she_property_address' , true );
         $curcity = get_post_meta( get_the_ID(),'_she_property_city' , true );
         $curstate = get_post_meta( get_the_ID(),'_she_property_state' , true );
-        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true );       
+        $curzip = get_post_meta( get_the_ID(),'_she_property_zip' , true );
         $curgmapsoverride = get_post_meta( get_the_ID(),'_she_property_custom_gmap' , true );
         if($curgmapsoverride != ''){
             $gmapslink = $curgmapsoverride;
         } else {
-            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;   
+            $gmapslink = "http://maps.google.com/?q=" . $curaddressmaps . ',+' . $curcitymaps . ',+' . $curstate . '+' . $curzip;
         }
-                        
-                        
-        ?>        
-            
+
+
+        ?>
+
 
                 <div class="frame she-article-row" id="<?php echo $current_art_slug; ?>">
                     <div class="bit-1">
@@ -1726,30 +1736,30 @@ function she_property_rc_toggle_generate(){
 
                                     <a href="#<?php echo $current_art_slug; ?>" class="art-toggle-btn-<?php echo $current_art; ?>"><?php the_post_thumbnail('she-circular-image','class=alignleft'); ?></a>
                                 </div>
-                                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
-                                    <h3><?php the_title(); ?></h3> 
-                                    <p><strong><?php echo $curcity . ', ' . $curstate; ?></strong></p>       
+                                    <h3><?php the_title(); ?></h3>
+                                    <p><strong><?php echo $curcity . ', ' . $curstate; ?></strong></p>
                                 </div>
-                                
+
                             </div>
                             <div class="bit-3 ">
                                 <div class="box-padding-vert text-center">
                                     <a href="#<?php echo $current_art_slug; ?>" class="she-blue-ghost-btn text-right art-toggle-btn-<?php echo $current_art; ?>">LEARN MORE</a>
                                 </div>
-                                
+
                             </div>
                         </div>
-                        <div class="frame">  
+                        <div class="frame">
                             <div class="bit-1">
                                 <div class="art-toggle-body-<?php echo $current_art; ?> box-padding" style="display:none">
                                     <?php if($curcity !='' && $curstate !=''){ ?>
                                     <div class="frame">
                                         <div class="bit-1 text-right"> <p> <a href="<?php echo $gmapslink; ?>" target="new" class="she-blue-text">Visit on Google Maps</a></p></div>
                                     </div>
-                                   
+
                                     <?php } ?>
                                     <p><?php echo $curunits; ?></p>
                                     <div class="text-right">
@@ -1763,14 +1773,14 @@ function she_property_rc_toggle_generate(){
                 <div class="frame">
                     <div class="bit-1">
                         <br>
-                    </div>  
+                    </div>
                 </div>
-            
+
 
         <?php
-         
+
     }
-    wp_reset_postdata(); 
+    wp_reset_postdata();
 
 }
 
@@ -1903,13 +1913,13 @@ function create_post_type_photo_gall() {
 
 
 
-// 
+//
 // Include Custom Shortcodes
-// 
+//
 require_once('inc/functions-custom-shortcodes.php');
 
 //
-//Include Menu 
+//Include Menu
 //
 require_once('inc/functions-menu.php');
 
