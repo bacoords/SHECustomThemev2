@@ -21,10 +21,10 @@
         $(".she-navbar-fixed-body-bar").slideDown(300);
         // $(".she-navbar-fixed").css("border-bottom","0px");
         $(".menu-toggle-body-bar").show();
-          });  
+          });
 
 
-      $(".menu-toggle-btn-programs").mouseenter(function(){ 
+      $(".menu-toggle-btn-programs").mouseenter(function(){
         $(".menu-toggle-btn-reset").css("border-bottom","solid 2px transparent");
         $(".menu-toggle-btn-programs").css("border-bottom","solid 2px #2185c7");
         $(".menu-toggle-body-newsandmulti").hide();
@@ -41,7 +41,7 @@
         $(".menu-toggle-btn-reset").css("border-bottom","solid 2px transparent");
         $(".menu-toggle-btn-getinvolved").css("border-bottom","solid 2px #2185c7");
         $(".menu-toggle-body-aboutus").hide();
-        $(".menu-toggle-body-programs").hide(); 
+        $(".menu-toggle-body-programs").hide();
         $(".menu-toggle-body-newsandmulti").hide();
         $(".menu-toggle-body-getinvolved").show();
         $(".she-navbar-fixed-body-bar").slideDown(300);
@@ -54,7 +54,7 @@
         $(".menu-toggle-btn-reset").css("border-bottom","solid 2px transparent");
         $(".menu-toggle-btn-newsandmulti").css("border-bottom","solid 2px #2185c7");
         $(".menu-toggle-body-aboutus").hide();
-        $(".menu-toggle-body-programs").hide();      
+        $(".menu-toggle-body-programs").hide();
         $(".menu-toggle-body-getinvolved").hide();
         $(".menu-toggle-body-newsandmulti").show();
         $(".she-navbar-fixed-body-bar").slideDown(300);
@@ -74,7 +74,7 @@
         $(".she-navbar-fixed-body-bar").slideUp(300);
         // $(".she-navbar-fixed").delay(300).css("border-bottom","solid 1px #ddd");
           });
-      
+
       $(".menu-toggle-btn-donate").mouseenter(function(){
         $(".menu-toggle-btn-reset").css("border-bottom","solid 2px transparent");
         $(".menu-toggle-btn-donate").css("border-bottom","solid 2px #2185c7");
@@ -137,12 +137,6 @@
 
       $(".menu-toggle-body-main").mouseleave(menutoggleinnerhide);
       });
-
-
-
-
-
-      
 
 
           var lastScrollTop = 0;

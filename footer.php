@@ -155,19 +155,18 @@
 
 
 
-   <?php wp_footer(); ?>
+  <?php wp_footer(); ?>
 
-  <?php  she_article_toggle_script(); ?>
+  <?php she_article_toggle_script(); ?>
   <?php she_call_property_rc_slider_script(); ?>
   <?php she_call_property_upcoming_slider_script(); ?>
   <?php she_call_property_slider_script();  ?>
-  <?php  she_call_smooth_scroll_script(); ?>
+  <?php she_call_smooth_scroll_script(); ?>
 
-   	<script src="<?php echo get_template_directory_uri(); ?>/js/tcs-galleries-v2.js"></script>
-
-      <script src="<?php echo get_template_directory_uri(); ?>/js/top-menu-scroll.js"></script>
-      <script src="<?php echo get_template_directory_uri(); ?>/js/skrollr.min.js"></script>
-       <script src="<?php echo get_template_directory_uri(); ?>/js/she-final-scripts.js"></script>
-   <script src="<?php echo get_template_directory_uri(); ?>/inc/venobox/venobox.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/tcs-galleries-v2.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/top-menu-scroll.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/skrollr.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/inc/venobox/venobox.min.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/js/she-final-scripts.js"></script>
   </body>
 </html>
