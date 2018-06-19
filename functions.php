@@ -1135,7 +1135,9 @@ function she_orbit_options_generate() {
 function she_article_toggle_script(){
 
     echo  "<script>
-            jQuery(document).ready(function(){";
+    (function($) {
+
+      $(document).ready(function($){";
 
     $args = array(
         'posts_per_page'   => 5,
@@ -1168,15 +1170,18 @@ function she_article_toggle_script(){
     }
 
 
-    echo "$('a').click(function(){
-            $('html, body').animate({
-                scrollTop: $( $(this).attr('href') ).offset().top
-            }, 500);
+    // echo "$('a').click(function(){
+    //         $('html, body').animate({
+    //             scrollTop: $( $(this).attr('href') ).offset().top
+    //         }, 500);
+    //
+    //         return false;
+    //     });";
 
-            return false;
-        });";
+    echo "
+      });
 
-    echo "});";
+    })( jQuery );";
     echo "</script>";
 
 
