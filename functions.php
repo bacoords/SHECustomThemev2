@@ -1275,8 +1275,10 @@ function she_call_property_slider_script() {
 // Script for She
 function she_property_toggle_script(){
 
-    echo  "<script>
-            jQuery(document).ready(function(){";
+  echo  "<script>
+  (function($) {
+
+    $(document).ready(function($){";
 
     $args = array(
         'posts_per_page'   => 50,
@@ -1308,7 +1310,6 @@ function she_property_toggle_script(){
     }
 
 
-    echo "});";
     echo "$('a').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
@@ -1316,7 +1317,11 @@ function she_property_toggle_script(){
 
             return false;
         });";
-    echo "</script>";
+        echo "
+          });
+
+        })( jQuery );";
+        echo "</script>";
 
 
 }
