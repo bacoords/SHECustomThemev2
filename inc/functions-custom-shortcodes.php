@@ -117,7 +117,7 @@ function she_sc_display_page( $atts, $content = null ) {
 
     // return '<div class="small-10 small-offset-1 medium-8 medium-offset-2">
     //                         <h4 class="text-center uppercase"><strong>' . $hhc_post->post_title . '</strong></h4><hr>
-    //                     </div>' . 
+    //                     </div>' .
     // do_shortcode($hhc_post->post_content);
     ob_start();
         ?>
@@ -135,35 +135,35 @@ function she_sc_display_page( $atts, $content = null ) {
             </div>
         </div>
     </div>
-    
+
     <section>
 
       <div class="frame">
         <div class="box-padding">
             <div class="bit-3 text-center">
-              
+
               <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/sustainability/"><span class="she-icons__houseleaf"></span></a>
 
               <h4><strong>Sustainability</strong></h4>
               <p>Building homes that are energy efficient, use fewer resources, and are affordable.</p>
-              
+
             </div>
 
             <div class="bit-3 text-center">
-            
+
              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/community-building/"><span class="she-icons__group"></span></a>
 
               <h4><strong>Community Building</strong></h4>
               <p>Empowering people to become leaders in their community. </p>
-              
+
             </div>
 
             <div class="bit-3 text-center">
-             
+
               <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/health-and-wellness/"><span class="she-icons__heart"></span></a>
               <h4><strong>Health &amp; Wellness</strong></h4>
               <p>Creating and supporting efforts to promote healthy homes and communities. </p>
-              
+
             </div>
         </div>
       </div>
@@ -176,7 +176,7 @@ function she_sc_display_page( $atts, $content = null ) {
 
 
 
-        
+
         <?php
         return ob_get_clean();
 }
@@ -196,7 +196,7 @@ function she_sc_display_blogs( $atts, $content = null ) {
     she_article_toggle_generate();
     return ob_get_clean();
 }
-add_shortcode( 'DisplayBlogsLoop', 'she_sc_display_blogs' ); 
+add_shortcode( 'DisplayBlogsLoop', 'she_sc_display_blogs' );
 
 
 // Displays the Properties(current-projects)
@@ -210,13 +210,13 @@ function she_sc_display_properties_building( $atts, $content = null ) {
 
 
     she_property_toggle_generate();
-    
+
 
 
 
     return ob_get_clean();
 }
-add_shortcode( 'DisplayPropertiesCurrentProjects', 'she_sc_display_properties_building' ); 
+add_shortcode( 'DisplayPropertiesCurrentProjects', 'she_sc_display_properties_building' );
 // Displays the Properties(current-projects)
 function she_sc_display_properties_upcoming( $atts, $content = null ) {
     global $she_property_upcoming_add_script;
@@ -228,13 +228,13 @@ function she_sc_display_properties_upcoming( $atts, $content = null ) {
 
 
     she_property_upcoming_toggle_generate();
-    
+
 
 
 
     return ob_get_clean();
 }
-add_shortcode( 'DisplayPropertiesUpcoming', 'she_sc_display_properties_upcoming' ); 
+add_shortcode( 'DisplayPropertiesUpcoming', 'she_sc_display_properties_upcoming' );
 
 
 // Displays the Properties(rental-communties)
@@ -248,13 +248,13 @@ function she_sc_display_properties_rc( $atts, $content = null ) {
 
 
     she_property_rc_toggle_generate();
-    
+
 
 
 
     return ob_get_clean();
 }
-add_shortcode( 'DisplayPropertiesRentalCommunities', 'she_sc_display_properties_rc' ); 
+add_shortcode( 'DisplayPropertiesRentalCommunities', 'she_sc_display_properties_rc' );
 
 
 
@@ -262,7 +262,7 @@ add_shortcode( 'DisplayPropertiesRentalCommunities', 'she_sc_display_properties_
 function she_sc_blue_ghost_btn( $atts, $content = null ) {
     return "<span class='she-blue-ghost-btn'>" . do_shortcode( $content ) . "</span>";
 }
-add_shortcode( 'Button', 'she_sc_blue_ghost_btn' ); 
+add_shortcode( 'Button', 'she_sc_blue_ghost_btn' );
 
 // Makes Content Full Screen Width
 function she_sc_full_width( $atts, $content = null ) {
@@ -271,7 +271,7 @@ function she_sc_full_width( $atts, $content = null ) {
         <div class='bit-1'><div class='box-padding page-defaults'>
             <BR><BR><BR><BR>";
 }
-add_shortcode( 'FullScreenWidth', 'she_sc_full_width' ); 
+add_shortcode( 'FullScreenWidth', 'she_sc_full_width' );
 
 
 // Creates a Vimeo Full Screen addition
@@ -288,7 +288,7 @@ function she_sc_vimeo( $atts, $content = null ) {
         ob_start();
     ?>
       <!-- Start Featured Vimeo -->
-      
+
   </div>
       <section>
 <!--Start Custom Overlay Frame-->
@@ -302,25 +302,25 @@ function she_sc_vimeo( $atts, $content = null ) {
         </div>
 </div>
 <!--End Custom Overlay Frame-->
-       
-       
+
+
         <div class="frame she-full-height-div she-blue-background text-center" style="background:url('<?php echo $vimeothumb; ?>') no-repeat center; background-size:cover;" >
-         
+
           <div class="bit-1 she-feature-header"  data-bottom-top="transform:translate(0px,-100px); opacity:0;" data-top-top="transform:translate(0px,100px); opacity:1;">
-            
+
                <div class="vimeo-tagline-header she-trans-blue">
                   <span class="she-vimeo-overlay-link">
                    <h1 class="she-vimeotag"><?php echo $a['headline']; ?></h1>
                    <h4><?php echo $a['tagline']; ?></h4>
                     <BR><BR>
-                    <span class="she-vimeo-overlay-link"><h3 class="uppercase she-blue-text"><strong>PLAY VIDEO &#x25b6;</strong></h3>                                
+                    <span class="she-vimeo-overlay-link"><h3 class="uppercase she-blue-text"><strong>PLAY VIDEO &#x25b6;</strong></h3>
                     <BR><BR>
-                    </span> 
+                    </span>
               </div>
-              
+
           </div>
-          
-        </div>  
+
+        </div>
       </section>
 
 
@@ -332,7 +332,7 @@ function she_sc_vimeo( $atts, $content = null ) {
     ob_get_clean();
     return $returnstring;
 }
-add_shortcode( 'Vimeo', 'she_sc_vimeo' ); 
+add_shortcode( 'Vimeo', 'she_sc_vimeo' );
 
 
 
@@ -350,7 +350,7 @@ function she_sc_custom_vimeo( $atts, $content = null ) {
         ob_start();
     ?>
       <!-- Start Featured Vimeo -->
-      
+
   </div>
 
 <!--Start Custom Overlay Frame-->
@@ -361,29 +361,29 @@ function she_sc_custom_vimeo( $atts, $content = null ) {
        <div class="videoWrapper">
             <iframe src="//player.vimeo.com/video/<?php echo $vimeoid; ?>" width="80%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        
+
         </div>
 </div>
 <!--End Custom Overlay Frame-->
-       
-  <section>   
+
+  <section>
         <div class="frame she-full-height-div she-blue-background text-center" style="background:url('<?php echo $vimeothumb; ?>') no-repeat center; background-size:cover;" >
-          
+
           <div class="bit-1"  data-bottom-top="transform:translate(0px,-100px); opacity:0;" data-top-top="transform:translate(0px,100px); opacity:1;">
-            
+
                <div class="she-feature-header">
                   <span class="she-vimeo-overlay-link  text-center vimeo-tagline-header she-trans-blue">
                    <h1 class="she-vimeotag"><?php echo $headline; ?></h1>
                    <h4><?php echo $tagline; ?></h4>
                     <BR><BR>
-                    <h2 >PLAY VIDEO &#x25b6;</h2>                                
+                    <h2 >PLAY VIDEO &#x25b6;</h2>
                     <BR><BR>
-                    </span> 
+                    </span>
               </div>
-              
+
           </div>
-          
-        </div>  
+
+        </div>
       </section>
 
 
@@ -395,7 +395,7 @@ function she_sc_custom_vimeo( $atts, $content = null ) {
     ob_get_clean();
     return $returnstring;
 }
-add_shortcode( 'CustomVimeoBox', 'she_sc_custom_vimeo' ); 
+add_shortcode( 'CustomVimeoBox', 'she_sc_custom_vimeo' );
 
 
 
@@ -417,7 +417,7 @@ function she_sc_contact_form( $atts, $content = null ){
               <h4 style="color:#444;">Please fill out the form.</h4>
             <?php echo do_shortcode( '[contact-form-7 id="688" title="Contact form 1"]' ); ?>
             </div>
-        </div> 
+        </div>
         <?php if(is_page_template('page-contact.php')) { ?>
         <span class="she-intake-overlay-link she-white-ghost-btn">Contact Us</span>
         <?php } else { ?>
@@ -429,7 +429,7 @@ function she_sc_contact_form( $atts, $content = null ){
     ob_end_clean();
     return $return_string;
 }
-add_shortcode( 'IntakeFormButton', 'she_sc_contact_form' ); 
+add_shortcode( 'IntakeFormButton', 'she_sc_contact_form' );
 
 
 // [BigBlueParagraph]  Gives that nice big SelfHelpBlue to the font.
@@ -437,7 +437,7 @@ function she_sc_lead_blue( $atts, $content = null  ){
      return "<p class='lead she-blue-text'>" . do_shortcode( $content ) . "</h3>";
 
 }
-add_shortcode( 'BigBlueParagraph', 'she_sc_lead_blue' ); 
+add_shortcode( 'BigBlueParagraph', 'she_sc_lead_blue' );
 
 
 // [ShowJobPostings]  Shows Job Postings.
@@ -445,7 +445,7 @@ function she_sc_job_postings( $atts, $content = null  ){
     // Generate Career Link Boxes
 
      $args = array(
-        'posts_per_page'   => 5,
+        'posts_per_page'   => -1,
         'offset'           => 0,
         'orderby'          => 'post_date',
         'order'            => 'DESC',
@@ -460,14 +460,14 @@ function she_sc_job_postings( $atts, $content = null  ){
         'suppress_filters' => true );
 
     $articles_array = get_posts( $args );
-    global $post; 
+    global $post;
     ob_start();        ?>
    </div><div class="frame equalizer-content">
-    <?php 
+    <?php
         if(empty($articles_array)){
             echo '<div class="text-center"><h3>Thank you for your interest. We currently do not have any openings.</h3></div>';
         } else {
-            foreach ($articles_array as $post ) { 
+            foreach ($articles_array as $post ) {
                 ?>
                 <div class="bit-3">
                     <div class="box-padding">
@@ -480,20 +480,20 @@ function she_sc_job_postings( $atts, $content = null  ){
                         </div>
                     </div>
                 </div>
-                <?php                
-                } 
+                <?php
+                }
         }?>
     </div><div class="box-padding page-defaults">
-    <?php 
+    <?php
     $return_string = ob_get_contents();
     wp_reset_postdata();
     ob_end_clean();
     return $return_string;
-    
+
 
 
 }
-add_shortcode( 'ShowJobPostings', 'she_sc_job_postings' ); 
+add_shortcode( 'ShowJobPostings', 'she_sc_job_postings' );
 
 
 function she_custom_gallery_shortcode( $atts, $content = null  ){
@@ -502,7 +502,7 @@ function she_custom_gallery_shortcode( $atts, $content = null  ){
         ), $atts );
     ob_start(); ?>
         </div>
-        <?php // echo get_template_part('tcs-galleries-v2'); 
+        <?php // echo get_template_part('tcs-galleries-v2');
 //        	$entries = get_post_meta( $a['id'], '_she_page_' . 'repeat_group', true );
             $counter = 0;
             $rowcounter = 0;
@@ -525,7 +525,7 @@ function she_custom_gallery_shortcode( $atts, $content = null  ){
                 // Start container Div
                 echo "<div id='tcs-gallery-" . $counter . "' class='tcs-gallery'>";
                 echo "<div class='tcs-gallery-row-case tcs-gallery-row-case-".$thisrow."'>";
-                $imgcounter = 0; 
+                $imgcounter = 0;
 
                   foreach ( $mykey_values[0] as $key => $value) {
                       if($rowcounter == 0){
@@ -556,19 +556,19 @@ function she_custom_gallery_shortcode( $atts, $content = null  ){
                         echo "</div>"; //End Wrapper
                         // echo '<li><a href="'.$value.'" class="cboxModal" rel="lightbox[postID]">';
                         // echo '<img src="'.$value.'">';
-                        // echo '</a></li>'; 
+                        // echo '</a></li>';
                         $endofrow = 0;
                         if($rowcounter == 9){
                             $thisrow++;
                             $rowcounter = 0;
                             $endofrow = 1;
                             echo "</div><!--End ROW-->";
-                            
+
                         }
                       }
                     if($endofrow==0){
                         echo "</div><!--End ROW-->";
-                    }	
+                    }
                     echo "</div>";
 
                     echo "<div class='frame'>
@@ -589,7 +589,7 @@ function she_custom_gallery_shortcode( $atts, $content = null  ){
     ob_end_clean();
     return $return_string;
 }
-add_shortcode( 'ShowGallery', 'she_custom_gallery_shortcode' ); 
+add_shortcode( 'ShowGallery', 'she_custom_gallery_shortcode' );
 
 
 
@@ -605,9 +605,9 @@ add_shortcode( 'ShowGallery', 'she_custom_gallery_shortcode' );
 
 
 
-// 
+//
 // Custom TinyMCE Buttons
-// 
+//
 // Hooks your functions into the correct filters
 function my_add_mce_button() {
     // check user permissions
