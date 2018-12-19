@@ -24,9 +24,19 @@ $event_id = get_the_ID();
 
 <div id="tribe-events-content" class="tribe-events-single">
 
-	<p class="tribe-events-back">
-		<a href="http://www.selfhelpenterprises.org/programs/homeownership-education/"> &laquo; Back to Homeownership Education</a>
-	</p>
+	<?php if( tribe_event_in_category( 'sga-calendar', $event_id ) ) : ?>
+
+		<p class="tribe-events-back">
+			<a href="https://www.selfhelpenterprises.org/programs/community-development/community-engagement-and-planning/sgma/"> &laquo; Back to Calendar</a>
+		</p>
+
+	<?php else : ?>
+
+		<p class="tribe-events-back">
+			<a href="http://www.selfhelpenterprises.org/programs/homeownership-education/"> &laquo; Back to Homeownership Education</a>
+		</p>
+
+	<?php endif; ?>
 
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
@@ -34,9 +44,9 @@ $event_id = get_the_ID();
 	<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
 	<div class="tribe-events-schedule tribe-clearfix">
-	
+
 		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-		
+
 		<!-- // Remove Cost from Header
 		<?php if ( tribe_get_cost() ) : ?>
 			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
