@@ -24,7 +24,7 @@ $event_id = get_the_ID();
 
 <div id="tribe-events-content" class="tribe-events-single">
 
-	<?php if( tribe_event_in_category( 'sga-calendar', $event_id ) ) : ?>
+	<?php if( tribe_event_in_category( 'sgma-calendar', $event_id ) ) : ?>
 
 		<p class="tribe-events-back">
 			<a href="https://www.selfhelpenterprises.org/programs/community-development/community-engagement-and-planning/sgma/"> &laquo; Back to Calendar</a>
