@@ -16,7 +16,12 @@
 
 	<!-- List Title -->
 	<?php do_action( 'tribe_events_before_the_title' ); ?>
-	<h3 class="tribe-events-page-title">Upcoming Events</h3>
+	<?php if(  tribe_event_in_category( 'sgma-calendar', $event_id ) ) : ?>
+
+	<?php else : ?>
+		<h3 class="tribe-events-page-title">Upcoming Events</h3>
+	<?php endif; ?>
+
 	<?php do_action( 'tribe_events_after_the_title' ); ?>
 
 </div>

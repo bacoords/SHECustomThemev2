@@ -63,3 +63,6 @@ h3.tribe-events-related-events-title {
 .tribe-events-user-recurrence-toggle {
   display: none !important;
 }
+
+.tribe-events-list .tribe-events-loop .tribe-events-category-sgma-calendar .tribe-events-event-image{
+width: 15%;}

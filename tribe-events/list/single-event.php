@@ -20,7 +20,7 @@ $venue_details = array(
   'name' => get_the_title( tribe_get_venue_id( ) ),
   'address' => tribe_get_full_address()
 );
-				
+
 
 // Venue
 $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : '';
@@ -64,17 +64,17 @@ $organizer = tribe_get_organizer();
 				if ( tribe_get_map_link() ) {
           //Custom Google Maps
            if ( tribe_get_venue_id( ) == '9116' ) {
-             
+
              echo ' <a href="https://www.google.com/maps/place/Goshen+Village+Apartments/@36.3516783,-119.4137777,17z/data=!3m1!4b1!4m5!3m4!1s0x8095277b8c355d17:0x82f17203369e354a!8m2!3d36.351674!4d-119.411589" class="tribe-events-gmap" target="_blank">+ Google Map</a>';
-              
-           } elseif ( tribe_get_venue_id( ) == '9101' ) { 
-             
+
+           } elseif ( tribe_get_venue_id( ) == '9101' ) {
+
              echo ' <a href="https://www.google.com/maps/place/Self-Help+Enterprises/@36.3435143,-119.3873517,17z/data=!4m5!3m4!1s0x809527a53ce408cf:0x8604f2e5f37feb40!8m2!3d36.34351!4d-119.385163" class="tribe-events-gmap" target="_blank">+ Google Map</a>';
-            
+
            } else {
-						
-               echo tribe_get_map_link_html(); 
-              
+
+               echo tribe_get_map_link_html();
+
            }
 				}
 				?>
@@ -88,11 +88,24 @@ $organizer = tribe_get_organizer();
 <!-- Event Image -->
 <?php echo tribe_event_featured_image( null, 'medium' ) ?>
 
+
+
 <!-- Event Content -->
 <?php do_action( 'tribe_events_before_the_content' ) ?>
+
+<?php
+if(tribe_event_in_category( 'sgma-calendar', $event_id ) ) {
+	function she_tribe_custom_excerpt_length( $length ) { return 100; }
+	add_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length', 999 );
+}
+?>
+
+
+
 <div class="tribe-events-list-event-description tribe-events-content">
 	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
 </div><!-- .tribe-events-list-event-description -->
 <?php
+remove_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length'); 
 do_action( 'tribe_events_after_the_content' );

@@ -64,12 +64,12 @@ $website = tribe_get_event_website_link();
 
 			<dt> <?php esc_html_e( 'Dates:', 'the-events-calendar' ) ?> </dt>
 			<dd>
-				<abbr class="tribe-events-abbr tribe-events-start-datetime published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> 
-				  <?php // esc_html_e( $start_date ) ?> 
-				   
+				<abbr class="tribe-events-abbr tribe-events-start-datetime published dtstart" title="<?php esc_attr_e( $start_ts ) ?>">
+				  <?php // esc_html_e( $start_date ) ?>
+
           <?php if( she_tec_has_additional_date() ) : ?>
-             <?php she_tec_output_additional_date(); ?> 
-          <?php endif; ?>	
+             <?php she_tec_output_additional_date(); ?>
+          <?php endif; ?>
 				</abbr>
 			</dd>
 <!--
@@ -97,8 +97,8 @@ $website = tribe_get_event_website_link();
 
 			<dt> <?php esc_html_e( 'Dates:', 'the-events-calendar' ) ?> </dt>
 			<dd>
-        <abbr class="tribe-events-abbr updated published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> 
-          <?php esc_html_e( $start_datetime ) ?>		 
+        <abbr class="tribe-events-abbr updated published dtstart" title="<?php esc_attr_e( $start_ts ) ?>">
+          <?php esc_html_e( $start_datetime ) ?>
 				</abbr>
 			</dd>
 
@@ -113,27 +113,27 @@ $website = tribe_get_event_website_link();
 		// Single day events
 		else :
 			?>
-     
+
       <?php if( she_tec_has_additional_date() ) : ?>
          <dt> <?php esc_html_e( 'Dates:', 'the-events-calendar' ) ?> </dt>
-      <?php else : ?>		
-      
+      <?php else : ?>
+
 			  <dt> <?php esc_html_e( 'Date:', 'the-events-calendar' ) ?> </dt>
 			<?php endif; ?>
 			<dd>
-				<abbr class="tribe-events-abbr tribe-events-start-date published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> 
-				
+				<abbr class="tribe-events-abbr tribe-events-start-date published dtstart" title="<?php esc_attr_e( $start_ts ) ?>">
+
 				  <?php esc_html_e( $start_date ) ?>
-				
+
           <?php if( she_tec_has_additional_date() ) : ?>
-             &amp; <?php she_tec_output_additional_date(); ?> 
-          <?php endif; ?>			 
-				  
+             &amp; <?php she_tec_output_additional_date(); ?>
+          <?php endif; ?>
+
 				</abbr>
 			</dd>
-     
 
-    
+
+
 			<dt> <?php echo esc_html( $time_title ); ?> </dt>
 			<dd>
 				<div class="tribe-events-abbr tribe-events-start-time published dtstart" title="<?php esc_attr_e( $end_ts ) ?>">
@@ -179,7 +179,13 @@ $website = tribe_get_event_website_link();
 
 
 			<dt> Contact Us:  </dt>
-			<dd class="tribe-events-event-url">(559) 651-1000<BR> <a href="mailto:Gateway@SelfHelpEnterprises.org">Gateway@SelfHelpEnterprises.org</a></dd>
+			<dd class="tribe-events-event-url">(559) 651-1000<BR>
+				<?php if(  tribe_event_in_category( 'sgma-calendar', $event_id ) ) : ?>
+					<a href="mailto:SGMA@SelfHelpEnterprises.org">SGMA@SelfHelpEnterprises.org</a>
+				<?php else : ?>
+					<a href="mailto:Gateway@SelfHelpEnterprises.org">Gateway@SelfHelpEnterprises.org</a>
+				<?php endif; ?>
+			</dd>
 
 		<?php do_action( 'tribe_events_single_meta_details_section_end' ) ?>
 	</dl>
