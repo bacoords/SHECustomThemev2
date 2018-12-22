@@ -56,13 +56,13 @@ add_filter( 'tribe_events_event_schedule_details', 'she_tec_append_recurring_inf
 function she_tec_append_recurring_info_dates( $schedule_details, $event_id = 0 ) {
 
   if ( empty( $event_id ) ) {
-    
+
     $event_id = get_the_ID();
-    
+
   }
-    
+
   $inner = '';
-  
+
   $fields = get_post_meta( $event_id, 'she_tec_addit_dates', true );
 
   if ( isset( $fields ) && ! empty( $fields ) && is_array( $fields ) ) :
@@ -70,30 +70,30 @@ function she_tec_append_recurring_info_dates( $schedule_details, $event_id = 0 )
     foreach ( (array) $fields as $key => $entry ) {
 
       $inner .= '<div class="she-tec-upcoming-dates">';
-      
+
       if ( isset( $entry['date'] ) )
         $inner .= '' . $entry['date'];
-      
+
       if ( isset( $entry['start_time'] ) ) :
         $inner .= ' @ ' . date('g:i a', strtotime( $entry['start_time'] ) );
       else :
         $inner .= ' @ ' . tribe_get_start_time($event_id);
       endif;
-      
+
       if ( isset( $entry['end_time'] ) ) :
         $inner .= ' - ' . date('g:i a', strtotime( $entry['end_time'] ) );
       else :
         $inner .= ' - ' . tribe_get_end_time($event_id);
       endif;
-      
+
      $inner .= '</div>';
     }
 
   endif;
-  
+
   if ( tribe_event_is_multiday($event_id) ) :
     return $inner;
-  else : 
+  else :
     return $schedule_details . $inner;
   endif;
 }
@@ -102,17 +102,17 @@ function she_tec_append_recurring_info_dates( $schedule_details, $event_id = 0 )
 // Output Value of Additional Field
 // $sep   Can add default separator
 function she_tec_output_additional_date($sep = '<BR>'){
-  
+
    if ( empty( $event_id ) ) {
-    
+
     $event_id = get_the_ID();
-    
+
   }
-    
+
   $fields = get_post_meta( $event_id, 'she_tec_addit_dates', true );
 
   if ( isset( $fields ) && ! empty( $fields ) && is_array( $fields ) ) :
-  
+
     $sep_counter = 0;
 
     foreach ( (array) $fields as $key => $entry ) {
@@ -120,10 +120,10 @@ function she_tec_output_additional_date($sep = '<BR>'){
       $date = $start_time = $end_time = '';
 
       if ( isset( $entry['date'] ) ) :
-        
+
         if($sep_counter > 0)
           echo $sep;
-      
+
         echo $entry['date'];
 
         if ( isset( $entry['start_time'] ) ) :
@@ -138,15 +138,15 @@ function she_tec_output_additional_date($sep = '<BR>'){
          echo ' - ' . tribe_get_end_time($event_id);
         endif;
 
-      
+
         $sep_counter++;
-      
+
       endif;
 
   }
 
   endif;
-  
+
 }
 
 
@@ -155,13 +155,13 @@ function she_tec_output_additional_date($sep = '<BR>'){
   * Determine Additional Date is Set.
   */
 function she_tec_has_additional_date(){
-  
+
   if ( empty( $event_id ) ) {
-    
+
     $event_id = get_the_ID();
-    
+
   }
-    
+
   $fields = get_post_meta( $event_id, 'she_tec_addit_dates', true );
 
 
@@ -170,7 +170,7 @@ function she_tec_has_additional_date(){
        return true;
 
   endif;
-  
+
   return false;
 }
 
@@ -231,7 +231,7 @@ add_filter( 'cmb_meta_boxes', 'she_tec_metabox' );
 
 
 /*
-  * 
+  *
   */
 function tec_enqueue_admin_css($hook) {
     if ( ( 'post.php' != $hook ) && ( 'post-new.php' != $hook ) ) {
@@ -242,3 +242,12 @@ function tec_enqueue_admin_css($hook) {
     wp_enqueue_style( 'tec_custom_wp_admin_css' );
 }
 add_action( 'admin_enqueue_scripts', 'tec_enqueue_admin_css' );
+
+
+
+function she_tribe_custom_excerpt_length( $length ) {
+  if( tribe_is_event() && tribe_event_in_category( 'sgma-calendar', get_the_ID() ) ) {
+    return 50;
+  }
+}
+add_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length', 999 );
