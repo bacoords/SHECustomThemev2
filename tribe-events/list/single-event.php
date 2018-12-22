@@ -94,9 +94,9 @@ $organizer = tribe_get_organizer();
 <?php do_action( 'tribe_events_before_the_content' ) ?>
 
 <?php
-if(tribe_event_in_category( 'sgma-calendar', $event_id ) ) {
-	function she_tribe_custom_excerpt_length( $length ) { return 100; }
-	add_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length', 999 );
+if( tribe_event_in_category( 'sgma-calendar', $event_id ) ) {
+	// function she_tribe_custom_excerpt_length( $length ) { return 100; }
+	// add_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length', 999 );
 }
 ?>
 
@@ -107,5 +107,5 @@ if(tribe_event_in_category( 'sgma-calendar', $event_id ) ) {
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
 </div><!-- .tribe-events-list-event-description -->
 <?php
-remove_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length'); 
+// remove_filter( 'excerpt_length', 'she_tribe_custom_excerpt_length');
 do_action( 'tribe_events_after_the_content' );
