@@ -77,6 +77,7 @@ function foundation_top_bar_getinvolved() {
     <?php
     } 
     ?> 
+		<li><a href="<?php echo get_site_url( 'events' ); ?>">Events</a></li>
         </ul> 
     <?php  
 }
