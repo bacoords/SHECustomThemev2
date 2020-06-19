@@ -415,7 +415,8 @@ function she_sc_contact_form( $atts, $content = null ){
               <span class="she-intake-overlay-close uppercase">&#10005;</span>
               <h2 style="color:#444;">Interest Form</h2>
               <h4 style="color:#444;">Please fill out the form.</h4>
-            <?php echo do_shortcode( '[contact-form-7 id="688" title="Contact form 1"]' ); ?>
+            <?php echo do_shortcode( '[ninja_form id=7]' ); ?>
+            <?php // echo do_shortcode( '[contact-form-7 id="688" title="Contact form 1"]' ); ?>
             </div>
         </div>
         <?php if(is_page_template('page-contact.php')) { ?>
