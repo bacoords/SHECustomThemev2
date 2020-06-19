@@ -641,6 +641,3 @@ add_filter( 'the_excerpt', 'remove_media_credit_from_excerpt' );
 function remove_media_credit_from_excerpt( $excerpt ) {
 	return preg_replace ( '|\[(.+?)\](.+?\[/\\1\])?|s', '', $excerpt);
 }
-
-
-?>

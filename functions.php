@@ -26,7 +26,7 @@ function example_add_dashboard_widgets() {
 
 	wp_add_dashboard_widget(
                  'tcs_dashboard_widget',         // Widget slug.
-                 'BrianCoords.com - Support',         // Title.
+                 'BrianCoords.com - Website Support and Development',         // Title.
                  'example_dashboard_widget_function' // Display function.
         );
 }
@@ -38,7 +38,7 @@ add_action( 'wp_dashboard_setup', 'example_add_dashboard_widgets' );
 function example_dashboard_widget_function() {
 
 	// Display whatever it is you want to show.
-	echo "<h3><a href='https://www.briancoords.com' target='_blank'>BrianCoords.com</a></h3><p><a href='mailto:bacoords@gmail.com'>bacoords@gmail.com</a></p><p>951-314-4449</p>";
+	echo "<h3><a href='https://www.briancoords.com' target='_blank'><img src='https://www.briancoords.com/wp-content/uploads/2018/03/Brian-Coords-horizontal-logo-on-white4-1024x214.png'></a></h3><p><a href='mailto:brian@briancoords.com'>brian@briancoords.com</a></p>";
 }
 
 //Enable Post Thumbnails (Featured Images)
@@ -1102,7 +1102,7 @@ function she_orbit_options_generate() {
     </div>
 
 
-<?
+<?php
 
 
 }
@@ -1236,24 +1236,9 @@ function she_article_toggle_generate(){
 
 
         <?php
-
     }
     wp_reset_postdata();
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1950,6 +1935,11 @@ require_once('inc/functions-menu.php');
 require_once('inc/functions-icon-shortcodes.php');
 
 //
-//Include Icon Shortcodes
+// Include Events Calendar Overrides
 //
 require_once('inc/functions-tecoverrides.php');
+
+//
+// Include Volunteer Form Settings
+//
+require_once('inc/functions-volunteer-form.php');

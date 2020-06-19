@@ -49,4 +49,3 @@ function she_sc_icons( $atts, $content = null ) {
     return $return_string;
 }
 add_shortcode( 'Icon', 'she_sc_icons' );
-?>
