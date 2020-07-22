@@ -415,7 +415,11 @@ function she_sc_contact_form( $atts, $content = null ){
               <span class="she-intake-overlay-close uppercase">&#10005;</span>
               <h2 style="color:#444;">Interest Form</h2>
               <h4 style="color:#444;">Please fill out the form.</h4>
-            <?php echo do_shortcode( '[ninja_form id=7]' ); ?>
+			  <?php if ( is_page( 'repair-your-home' ) ) : ?>
+				<?php echo do_shortcode( '[ninja_form id=6]' ); ?>
+			  <?php else : ?>
+				<?php echo do_shortcode( '[ninja_form id=7]' ); ?>
+			  <?php endif; ?>
             <?php // echo do_shortcode( '[contact-form-7 id="688" title="Contact form 1"]' ); ?>
             </div>
         </div>
