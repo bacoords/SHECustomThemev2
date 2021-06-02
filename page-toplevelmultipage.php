@@ -26,7 +26,8 @@ Template Name: Top-Level Page Template (External Links Only)
       $mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'menu_order', 'sort_order' => 'asc', 'parent'=>$post->ID, 'exclude'=>289 ) );
 
      if( is_page( 'news-multimedia' ) ){ $thisnews = FALSE; } else { $thisnews = TRUE; }
-    if( is_page( 'community-development' ) ){ $commdev = TRUE; } else { $commdev = FALSE; }
+    if( is_page( array( 'community-development', 'emergency-services' ) ) ){ $two_col = TRUE; } else { $two_col = FALSE; }
+
 
 
 
@@ -109,7 +110,7 @@ Template Name: Top-Level Page Template (External Links Only)
                $counter+=1;
 
                 ?>
-                <?php if ( $commdev) {
+                <?php if ( $two_col) {
                   echo '<div class="bit-2">';
                 } else {
 
@@ -138,7 +139,7 @@ Template Name: Top-Level Page Template (External Links Only)
                   </div>
 
                 <?php
-                if ( $commdev) {
+                if ( $two_col) {
                     if($counter==2){
                     echo '</div><div class="frame">';
                     $counter = 0;
