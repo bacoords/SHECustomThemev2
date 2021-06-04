@@ -1943,3 +1943,8 @@ require_once('inc/functions-tecoverrides.php');
 // Include Volunteer Form Settings
 //
 require_once('inc/functions-volunteer-form.php');
+
+//
+// Include New Rental Design
+//
+require_once('inc/functions-rental.php');
