@@ -73,8 +73,8 @@ function she_dev_rental_communities_output() {
 		<div class="she-rc-cities frame">
 			<?php
 			$cities = array();
-			foreach ( $articles_array as $post ) {
-				$cities[] = get_post_meta( $post->ID, '_she_property_city', true );
+			foreach ( $articles_array as $art_post ) {
+				$cities[] = get_post_meta( $art_post->ID, '_she_property_city', true );
 			}
 			sort( $cities );
 			$cities = array_unique( $cities );
@@ -89,18 +89,18 @@ function she_dev_rental_communities_output() {
 			<?php endforeach; ?>
 		</div>
 		<div class="frame">
-			<?php 
+			<?php
 			foreach ( $articles_array as $post ) {
 				$current_art      = $post->ID;
 				$current_art_slug = $post->post_name;
 				setup_postdata( $post );
-				$curunits         = get_post_meta( get_the_ID(), '_she_property_total_units', true );
-				$curaddress       = get_post_meta( get_the_ID(), '_she_property_address', true );
-				$curcity          = get_post_meta( get_the_ID(), '_she_property_city', true );
-				$curstate         = get_post_meta( get_the_ID(), '_she_property_state', true );
-				$curcounty        = get_post_meta( get_the_ID(), '_she_property_county', true );
-				$curzip           = get_post_meta( get_the_ID(), '_she_property_zip', true );
-				$curgmapsoverride = get_post_meta( get_the_ID(), '_she_property_custom_gmap', true );
+				$curunits         = get_post_meta( $post->ID, '_she_property_total_units', true );
+				$curaddress       = get_post_meta( $post->ID, '_she_property_address', true );
+				$curcity          = get_post_meta( $post->ID, '_she_property_city', true );
+				$curstate         = get_post_meta( $post->ID, '_she_property_state', true );
+				$curcounty        = get_post_meta( $post->ID, '_she_property_county', true );
+				$curzip           = get_post_meta( $post->ID, '_she_property_zip', true );
+				$curgmapsoverride = get_post_meta( $post->ID, '_she_property_custom_gmap', true );
 				$keywords         = array(
 					get_the_title(),
 					$curcity,
