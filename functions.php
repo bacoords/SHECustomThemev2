@@ -335,6 +335,12 @@ function she_property_metaboxes( $meta_boxes ) {
                 'type' => 'text_small'
             ),
             array(
+                'name' => 'County',
+                'desc' => 'County',
+                'id' => $prefix . 'county',
+                'type' => 'text_small'
+            ),
+            array(
                 'name' => 'State',
                 'desc' => 'State',
                 'default' => 'CA',
