@@ -18,6 +18,12 @@ Template Name: Top-Level Page Template (External Links Only)
           <br><BR>
           <h1 class="uppercase text-center"><?php the_title(); ?></h1>
           <BR><BR>
+		  <?php if ( is_page( 'emergency-services' ) ) : ?>
+		  <div class="text-center" style="max-width: 700px; display:block; margin:0 auto;">
+			<p><em>Engaging with and educating our most vulnerable populations of the SJV with vital information about natural disasters like flood, fire, earthquake, drought, and pandemics. SHE's Emergency Services Team is committed to providing individuals, families and communities, resources that will ensure safety and security during a disaster.</em></p>
+			</div>
+			<br><br>
+		  <?php endif; ?>
         </div>
 
       <div class="frame">
