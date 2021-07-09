@@ -114,7 +114,7 @@ function she_dev_rental_communities_output() {
 				}
 
 				?>
-					<div class="bit-3 she-article-column" id="<?php echo esc_attr( $current_art_slug ); ?>" data-city="<?php echo esc_attr( $curcity ); ?>" data-county="<?php echo esc_attr( $curcounty ); ?>" data-keyword="<?php echo esc_attr( $keywords ); ?>">
+					<div class="bit-4 she-article-column" id="<?php echo esc_attr( $current_art_slug ); ?>" data-city="<?php echo esc_attr( $curcity ); ?>" data-county="<?php echo esc_attr( $curcounty ); ?>" data-keyword="<?php echo esc_attr( $keywords ); ?>">
 						<div class="she-article-row">
 							<div class="she-rc-box">
 								<div class="text-center">
@@ -150,7 +150,7 @@ function she_dev_rental_communities_output() {
 			}
 			.she-rc-shortcode .she-rc-box h3{ color: #fff;background-color: #0079c2; font-weight:bold; display: block; padding-bottom: 0px; }
 			.she-rc-shortcode .she-rc-box a {display:block; }
-			.she-rc-shortcode .she-rc-box a .she-image-thumb {display:block; height: 200px; overflow:hidden; }
+			.she-rc-shortcode .she-rc-box a .she-image-thumb {display:block; height: 170px; overflow:hidden; }
 			.she-rc-shortcode .she-rc-box a img {display:block;}
 			.she-rc-shortcode .she-rc-box {margin: 10px;}
 			.she-rc-shortcode button{
@@ -174,12 +174,12 @@ function she_dev_rental_communities_output() {
 			.she-rc-shortcode .she-rc-counties{
 				display: none;
 			}
-			.she-rc-shortcode .she-article-column{
-				/* display: none; */
-			}
-			.she-rc-shortcode .she-article-column:nth-of-type(1n+4){
+			/* .she-rc-shortcode .she-article-column{
 				display: none;
-			}
+			} */
+			/* .she-rc-shortcode .she-article-column:nth-of-type(1n+4){
+				display: none;
+			} */
 			.she-rc-shortcode button.active{
 				border-color: #e8CB89;
 			}
