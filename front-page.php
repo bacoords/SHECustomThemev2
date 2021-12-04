@@ -120,7 +120,7 @@
             <div class="bit-3 she-circular-image text-center"  data-bottom-top="transform:translate(33%,0%);" data-top-top="transform:translate(0%,0%);">
               <BR><BR><BR>
             
-              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/sustainability/"><span class="she-icons__houseleaf"></span></a>
+              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/sustainability/"><span class="she-icons__houseleaf"></span><span class="screen-reader-text">Sustainability</span></a>
 
               <h4><strong>Sustainability</strong></h4>
               <p>Building homes that are energy efficient, use fewer resources, and are affordable.</p>
@@ -130,7 +130,7 @@
             <div class="bit-3 she-circular-image text-center" data-bottom-top="transform:translate(0px,0px);" data-top-top="transform:translate(0px,0px);">
               <BR><BR><br>
              
-             <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/community-building/"><span class="she-icons__group"></span>
+             <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/community-building/"><span class="she-icons__group"><span class="screen-reader-text">Community Building</span></span>
              </a>
 
               <h4><strong>Community Building</strong></h4>
@@ -141,7 +141,7 @@
             <div class="bit-3 she-circular-image text-center"  data-bottom-top="transform:translate(-33%,0%);" data-top-top="transform:translate(0%,0%);">
               <BR><BR><br>
               
-              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/health-and-wellness"><span class="she-icons__heart"></span></a>
+              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/health-and-wellness"><span class="she-icons__heart"></span><span class="screen-reader-text">Health &amp; Wellness</span></a>
               <h4><strong>Health &amp; Wellness</strong></h4>
               <p>Creating and supporting efforts to promote healthy homes and communities.</p>
               
@@ -242,7 +242,7 @@
                           the_post_thumbnail('gallery-image');
                         }
                         else {
-                            echo '<img src="'. get_template_directory_uri() . '/img/houseshort.jpg">';
+                            echo '<img src="'. get_template_directory_uri() . '/img/houseshort.jpg" alt="an image of a house">';
                         }
                     ?>
                   <div class="blog-blurb box-padding">

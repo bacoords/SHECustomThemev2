@@ -70,7 +70,7 @@
                           the_post_thumbnail('thumbnail');
                         }
                         else {
-                            echo '<img src="'. get_template_directory_uri() . '/img/houseshort.jpg" height="150" width="150">';
+                            echo '<img src="'. get_template_directory_uri() . '/img/houseshort.jpg" height="150" width="150" alt="an image of a house">';
                         }
                     ?>
                     <h6><?php the_title(); ?></h6>

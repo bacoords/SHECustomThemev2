@@ -38,7 +38,7 @@ add_action( 'wp_dashboard_setup', 'example_add_dashboard_widgets' );
 function example_dashboard_widget_function() {
 
 	// Display whatever it is you want to show.
-	echo "<h3><a href='https://www.briancoords.com' target='_blank'><img src='https://www.briancoords.com/wp-content/uploads/2018/03/Brian-Coords-horizontal-logo-on-white4-1024x214.png'></a></h3><p><a href='mailto:brian@briancoords.com'>brian@briancoords.com</a></p>";
+	echo "<h3><a href='https://www.briancoords.com' target='_blank'><img src='https://www.briancoords.com/wp-content/uploads/2018/03/Brian-Coords-horizontal-logo-on-white4-1024x214.png'></a></h3><p><a href='mailto:bacoords@gmail.com'>bacoords@gmail.com</a></p>";
 }
 
 //Enable Post Thumbnails (Featured Images)
