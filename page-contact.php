@@ -105,16 +105,16 @@ Template Name: Contact Page Template
 				<h2 style="text-align: center;"><strong>CONNECT</strong></h2>
 				<div class="frame">
 				    <div class="bit-4 text-center"><a href="http://www.facebook.com/selfhelpenterprises" target="_blank">
-                        <span class="she-icons__facebook"></span></a>
+                        <span class="she-icons__facebook"></span><span class="screen-reader-text">Facebook</span></a>
 				    </div>
 				    <div class="bit-4 text-center"><a href="http://www.linkedin.com/company/self-help-enterprises" target="_blank">
-                        <span class="she-icons__linkedin"></span></a>
+                        <span class="she-icons__linkedin"></span><span class="screen-reader-text">LinkedIn</span></a>
 				    </div>
                     <div class="bit-4 text-center"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=xgxexupab&p=oi&m=1116313115863&sit=tut4q8oib&f=c3b373c6-daf4-4a53-9ac0-2cff4d91ceb1" target="_blank">
-                        <span class="she-icons__newsletter"></span></a>
+                        <span class="she-icons__newsletter"></span><span class="screen-reader-text">Newsletter</span></a>
 				    </div>
                     <div class="bit-4 text-center"><a href="https://vimeo.com/user1983551" target="_blank">
-                        <span class="she-icons__vimeo"></span></a>
+                        <span class="she-icons__vimeo"></span><span class="screen-reader-text">Vimeo</span></a>
 				    </div>
                 </div>
 				<BR><BR><BR><BR>

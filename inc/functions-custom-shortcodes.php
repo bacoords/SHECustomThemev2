@@ -142,7 +142,7 @@ function she_sc_display_page( $atts, $content = null ) {
         <div class="box-padding">
             <div class="bit-3 text-center">
 
-              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/sustainability/"><span class="she-icons__houseleaf"></span></a>
+              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/sustainability/"><span class="she-icons__houseleaf"></span><span class="screen-reader-text">Sustainability</span></a>
 
               <h4><strong>Sustainability</strong></h4>
               <p>Building homes that are energy efficient, use fewer resources, and are affordable.</p>
@@ -151,7 +151,7 @@ function she_sc_display_page( $atts, $content = null ) {
 
             <div class="bit-3 text-center">
 
-             <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/community-building/"><span class="she-icons__group"></span></a>
+             <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/community-building/"><span class="she-icons__group"></span><span class="screen-reader-text">Community Building</span></a>
 
               <h4><strong>Community Building</strong></h4>
               <p>Empowering people to become leaders in their community. </p>
@@ -160,7 +160,7 @@ function she_sc_display_page( $atts, $content = null ) {
 
             <div class="bit-3 text-center">
 
-              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/health-and-wellness/"><span class="she-icons__heart"></span></a>
+              <a href="<?php echo get_site_url(); ?>/healthy-homes-communities/health-and-wellness/"><span class="she-icons__heart"></span><span class="screen-reader-text">Health &amp; Wellness</span></a>
               <h4><strong>Health &amp; Wellness</strong></h4>
               <p>Creating and supporting efforts to promote healthy homes and communities. </p>
 
